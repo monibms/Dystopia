@@ -1,5 +1,7 @@
 {
 "name" : "Dystopia難易度表",
 "symbol" : "dy",
-"data_url" : "https://script.googleusercontent.com/macros/echo?user_content_key=rWJ3pd-_mUICVeo25tu3cbCujlenv-3h3aXthPIitKDneSkd3f0HY-N56o7QiWnxSSS7MStIdsfTz8MM7-Q396obSKihdkCRm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFqdW-GZDbjMT8oBL2iEjMhoQ4Wi0iqIw2yG1JhK_VxIXs1MMe0LeZHh33oneVHxdGOqF6zqGCJGOm2odjBqfUstoVZr_IgVH9z9Jw9Md8uu&lib=MoDVhvYLr5C5GmeZEuGnhuS_2xfn3dVX6"
+"data_url" : "https://script.google.com/macros/s/AKfycbzzrbIKEmIHQNrt2t0_FiTCGLTzDL9Fo0IlBvV1CJxzvuDaaDmUpRTfnf_lPTu5riUs6Q/exec",
+"level_order" : [0,1,2,3,4,5,6,7,"？"]
+
 }
