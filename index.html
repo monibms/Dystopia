@@ -1,113 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <title>Dystopia難易度表</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bmstable" content="header.json" />
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
-</head>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3H9QLCBCD4&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<body>
-    <header class="mb-3">
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Dystopia難易度表</span>
-            </div>
-        </nav>
-    </header>
+  gtag('config', 'UA-220201324-1');
+</script>
 
-    <div class="container">
+<title>Dystopia難易度表</title>
+<meta name="google-site-verification" content="F6Q7xJyM044_ATTpnBjnKWwwGQ7H1h3WNa1O5AqXDwE">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Script-Type" content="text/javascript"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="style/style.js"></script> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="bmstable" content="./dystopia_header.json"> <!--　読み込む難易度表のヘッダファイルをここに指定　-->
+<link href="style/style.css" rel="stylesheet" type="text/css" media="screen,print">
+<!-- <script src="style/style.js"></script>// --> 
+</head> 
 
-        <div class="alert alert-success mb-3" role="alert">
-            <p>ここに難易度表の説明文。次期難易度表フォーマット対応。</p>
-            <p>難易度表の読み込みと表示に数秒かかります。</p>
-            <hr>
-            <p class="mb-0">説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文</p>
-        </div>
-
-
-        <!--ここから難易度表本体-->
-        <div>
-            <table class="table table-light table-striped table-hover" id="table_int">
-            </table>
-        </div>
-        <script language="javascript" type="text/javascript">
-            $(document).ready(function () {
-                $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
-                    $.getJSON(header.data_url, function (information) {
-                        makeBMSTable(information, header.symbol);
-                    });
-                });
-            });
-
-            function makeBMSTable(info, mark) {
-                var x = "";
-                var ev = "";
-                var count = 0;
-                var obj = $("#table_int");
-
-                obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Notes</th><th>Total</th><th>差分</th><th>Comment</th></tr></thead><tbody>")
-                    .appendTo(obj);
-                var obj_sep = null;
-                for (var i = 0; i < info.length; i++) {
-                    if (x != info[i].level) {
-                        if (obj_sep != null) {
-                            obj_sep.html("<td colspan='7'>" + "<b>" + mark + x + " (" + count +
-                                "譜面)</b></td>");
-                        }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
-                            "'></tr>");
-                        obj_sep.appendTo(obj);
-                        count = 0;
-                        x = info[i].level;
-                    }
-
-                    var str = $("<tr></tr>");
-
-                    // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
-
-                    // Title
-                    $("<td width='35%'>" +
-                        "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
-                            i]
-                        .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
-
-                    // Artist
-                    $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
-
-                    // Notes
-                    $("<td width='5%'>" + info[i].notes + "</td>").appendTo(str);
-                    
-                    // Total
-                    $("<td width='5%'>" + info[i].total + "</td>").appendTo(str);
-                    
-                    // 差分
-                    $("<td width='5%'>" + "<a href='" + info[i].chart + "' target='_blank'>DL</a></td>").appendTo(str);
-                    
-                    // Comment
-                    $("<td width='25%'>" + info[i].comment + "</td>").appendTo(str);
-                    str.appendTo(obj);
-                    count++;
-
-                }
-                $("</tbody>").appendTo(obj);
-
-                if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='7'>" + "<b>" + mark + x +
-                        " (" + count + "譜面)</b></td>");
-                }
-            }
-        </script>
+<body class="">
+<header class="header">
+  <section class="header__inner">
+    <h1>概要</h1>
+    <div class="overlay" id="js-overlay"></div>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__lineTop"></span>
+      <span class="hamburger__lineCenter"></span>
+      <span class="hamburger__lineBottom"></span>
+      <script src="style/style.js"></script> 
     </div>
+    <div class="sideMenu">
+    <nav>
+        <ul>
+          <li>
+            <a href="dystopia.html">　HOME　</a>
+          </li>
+          <li>
+            <a href="dystopia_overview.html">　概要　</a>
+          </li>
+          <li>
+            <a href="dystopia_caution.html">　注意事項　</a>
+          </li>
+          <li>
+            <a href="dystopia_rule.html">　ルール　</a>
+          </li>
+          <li>
+            <a href="dystopia_notice.html">　お知らせ　</a>
+          </li>
+          <li>
+            <a href="dystopia_changelog.html">　更新履歴　</a>
+          </li>
+          <li>
+            <a href="dystopia_vote.html">　難易度変更提案＆投票　</a>
+          </li>
+          <li>
+            <a href="dystopia_request.html">　新規搭載提案　</a>
+          </li>
+          <li>
+            <a href="dystopia_other.html">　その他　</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/moni_bms">　管理人　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
+  
+<br><br><br>
+[本難易度表について]<br>
+スーパーゴリラ向けの暗黒世界(Dystopia)のような難易度表です。<br>
+他の難易度表では物足りないという方や更なる地力向上を目的とした方へ向けたものとして作成いたしました。<br>
+本難易度表はLR2基準です。<br>
+クリア基準及び難易度指標は、Stella難易度表様に準拠いたします。<br>
+また難易度の評価については、通しで叩くものとして評価しております。<br><br>
 
-</html>
+[搭載差分について]<br>
+管理人の見立てで正統派地力譜面を採用しているつもりです。<br>
+搭載時は妥当な難易度になるよう振り分けを行っておりますが、詐称逆詐称等が散見されると思われますのでご容赦くださいませ。<br>
+搭載差分の修正版等に気づいた方がいましたら、管理人へ連絡いただければ幸いです。<br><br>
