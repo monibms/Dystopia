@@ -1,4 +1,3 @@
-
 body,
 ul,
 h1,
@@ -8,7 +7,7 @@ p {
   padding: 0;
 }
 h1 {
-  font-size: 20px;
+  font-size: 16px;
 }
 a {
   display: block;
@@ -44,16 +43,6 @@ a {
   top: 0;
   width: 200px;
   z-index: 200;
-  text-align: left;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  max-height: 100vh;
-
- li:last-child{
- margin-bottom:40px; }
-}
-
 }
 
 .hamburger {
@@ -133,7 +122,7 @@ section {
 }
 .service {
   background-color: #ffbcbc;
-} 
+}
 
 table {
   border-collapse: collapse;
