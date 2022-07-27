@@ -10,3 +10,18 @@ function toggleNav() {
   });
 }
 toggleNav(); 
+
+const btn = document.getElementById('click');
+const nav = document.getElementById('nav');
+
+btn.addEventListener('click' , () => {
+  if(nav.classList.contains('open')){
+    nav.classList.remove('open');
+        // 固定解除
+    bodyScrollLock.clearAllBodyScrollLocks();
+  } else {
+    nav.classList.add('open');
+        // 背景固定
+    bodyScrollLock.disableBodyScroll(nav);
+  }
+});
