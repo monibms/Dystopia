@@ -11,17 +11,19 @@ function toggleNav() {
 }
 toggleNav(); 
 
-const btn = document.getElementById('click');
-const nav = document.getElementById('nav');
-
-btn.addEventListener('click' , () => {
-  if(nav.classList.contains('open')){
-    nav.classList.remove('open');
-        // 固定解除
-    bodyScrollLock.clearAllBodyScrollLocks();
-  } else {
-    nav.classList.add('open');
-        // 背景固定
-    bodyScrollLock.disableBodyScroll(nav);
-  }
+// ハンバーガーメニューオープン時の背景固定
+$(function () {
+  let state = false;
+  let scrollpos;
+  $("#js-hamburger,#js-overlay").on("click", function () {
+    if (state == false) {
+      scrollpos = $(window).scrollTop();
+      $("body").addClass("fixed").css({ top: -scrollpos });
+      state = true;
+    } else {
+      $("body").removeClass("fixed").css({ top: 0 });
+      window.scrollTo(0, scrollpos);
+      state = false;
+    }
+  });
 });
