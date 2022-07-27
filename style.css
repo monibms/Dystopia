@@ -143,3 +143,6 @@ th {
   color: #0d90f3;/* 見出しの文字色 */
   background-color: #d0ebfd; /* 見出しの背景色 */
 } 
+
+margin-left:   15px;  /* 左だけ指定 */
+margin-right:  15px;  /* 右だけ指定 */
