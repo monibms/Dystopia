@@ -35,15 +35,24 @@ a {
 }
 .sideMenu {
   background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 56px;
   position: fixed;
-　　 overflow-y: scroll;  
-　　 z-index: 200;
-    top:0;
   right: -200px;
-    width: 200px;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;   // 慣性スクロールを追加
-　}
+  transition: all 0.6s;
+  top: 0;
+  width: 200px;
+  z-index: 200;
+  text-align: left;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+ li:last-child{
+ margin-bottom:40px; }
+}
 
 }
 
