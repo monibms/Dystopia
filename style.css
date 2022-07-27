@@ -129,4 +129,22 @@ section {
 }
 .service {
   background-color: #ffbcbc;
+
+}
+table {
+  border-collapse: collapse;
+  color: #333; /* 全体の文字色 */
+  background-color: #FFF; /* 全体の背景色 */
+}
+th, td {
+  padding: 5px 15px;
+  border: solid 1px #a5d1f1;
+}
+th {
+  color: #0d90f3;/* 見出しの文字色 */
+  background-color: #d0ebfd; /* 見出しの背景色 */
+} 
+
+#sample {
+  padding: 15px;
 }
