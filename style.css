@@ -34,7 +34,6 @@ a {
   list-style-type: none;
   margin-top: 30px;
   text-align: left;
-  color: #FFFFFF;
 
 }
 .header a {
@@ -84,7 +83,7 @@ a {
 
 /* メニューが開いた時のCSS */
 .nav-open .sideMenu {
-  background-color: #000000;
+  background-color: #FFF;
   right: 0;
 }
 .nav-open .hamburger__lineTop {
