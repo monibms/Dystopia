@@ -27,19 +27,3 @@ $(function () {
     }
   });
 });
-
-// ハンバーガーメニュー展開時の背景固定
-$(function () {
-  $(".ham").click(function () {
-    // トリガーをクリックした時の条件分岐
-    if ($(this).hasClass("is-active")) {
-      // ナビを閉じるときの処理
-      $("html").removeClass("is-fixed"); // 背景固定解除！
-    } else {
-      // ナビを開くときの処理
-      $("html").addClass("is-fixed"); // 背景固定！
-    }
-    $(".ham").toggleClass("is-active");
-  });
-});
-        
