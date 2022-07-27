@@ -33,7 +33,7 @@ a {
 .header li {
   list-style-type: none;
   margin-top: 30px;
-  text-align; left
+  text-align: left;
 }
 .header a {
   color: #000;
