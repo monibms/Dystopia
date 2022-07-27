@@ -7,7 +7,7 @@ p {
   padding: 0;
 }
 h1 {
-  font-size: 20px;
+  font-size: 16px;
 }
 a {
   display: block;
@@ -33,14 +33,13 @@ a {
 .header li {
   list-style-type: none;
   margin-top: 30px;
-  text-align: left;
-
+  text-align; left
 }
 .header a {
   color: #000;
 }
 .sideMenu {
-  background-color: #FFF;
+  background-color: #fff;
   height: 100%;
   overflow-y: scroll;
   padding-top: 56px;
@@ -78,12 +77,22 @@ a {
 .hamburger__lineBottom {
   top: 38px;
 }
-
-
-
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 100;
+}
 /* メニューが開いた時のCSS */
 .nav-open .sideMenu {
-  background-color: #FFF;
+  background-color: #fff;
   right: 0;
 }
 .nav-open .hamburger__lineTop {
@@ -119,8 +128,9 @@ section {
 }
 .service {
   background-color: #ffbcbc;
-
 }
+
+
 table {
   border-collapse: collapse;
   color: #333; /* 全体の文字色 */
