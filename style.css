@@ -56,7 +56,6 @@ a {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
-  max-height: 100vh;
 
  li:last-child{
  margin-bottom:40px;
