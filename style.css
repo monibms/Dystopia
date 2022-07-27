@@ -1,0 +1,130 @@
+body,
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 16px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.fixed {
+/*   height: 100%; */
+  position: fixed;
+/*   width: 100%; */
+}
+.header {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+.header__inner {
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+}
+.header li {
+  list-style-type: none;
+  margin-top: 30px;
+}
+.header a {
+  color: #000;
+}
+.sideMenu {
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 56px;
+  position: fixed;
+  right: -200px;
+  transition: all 0.6s;
+  top: 0;
+  width: 200px;
+  z-index: 200;
+}
+
+.hamburger {
+  cursor: pointer;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  z-index: 300;
+}
+.hamburger span {
+  background-color: #111;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  transition: all 0.6s;
+  width: 30px;
+}
+.hamburger__lineTop {
+  top: 20px;
+}
+.hamburger__lineCenter {
+  top: 29px;
+}
+.hamburger__lineBottom {
+  top: 38px;
+}
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 100;
+}
+/* メニューが開いた時のCSS */
+.nav-open .sideMenu {
+  background-color: #fff;
+  right: 0;
+}
+.nav-open .hamburger__lineTop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav-open .hamburger__lineCenter {
+  left: 50%;
+  width: 0;
+}
+.nav-open .hamburger__lineBottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav-open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+section {
+  margin: 0 auto 200px;
+  text-align: center;
+  width: 80%;
+}
+.about {
+  background-color: #ffffbc;
+  margin-top: 200px;
+}
+.works {
+  background-color: #bcffdd;
+}
+.gallery {
+  background-color: #bcbcff;
+}
+.service {
+  background-color: #ffbcbc;
+}
