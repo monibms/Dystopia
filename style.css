@@ -45,7 +45,6 @@ a {
 .sideMenu {
   background-color: #fff;
   height: 100vh;
-  overflow-y: auto;
   padding-top: 56px;
   position: fixed;
   right: -200px;
