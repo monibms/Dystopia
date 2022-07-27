@@ -39,6 +39,7 @@ a {
 　　 overflow-y: scroll;  
 　　 z-index: 200;
     top:0;
+  right: -200px;
     width: 200px;
     height: 100%;
     -webkit-overflow-scrolling: touch;   // 慣性スクロールを追加
