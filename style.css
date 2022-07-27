@@ -148,3 +148,10 @@ th {
 #sample {
   padding: 15px;
 }
+
+html.is-fixed,
+　　　　html.is-fixed body {
+  height: 100%;
+  overflow: hidden;
+　　　　}
+        
