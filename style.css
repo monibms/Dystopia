@@ -54,6 +54,9 @@ a {
   width: 200px;
   z-index: 200;
   text-align: left;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
 }
 
 .hamburger {
