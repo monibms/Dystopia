@@ -149,6 +149,10 @@ th {
   padding: 15px;
 }
 
+line {
+  border: solid medium #FFFFFF ;
+}
+
 html.is-fixed,
 html.is-fixed body {
   height: 100%;
