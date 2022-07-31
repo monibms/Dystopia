@@ -150,8 +150,8 @@ th {
 }
 
 .br {
-  border-top: 3px solid #d0ebfd;
-  border-bottom: 3px solid #d0ebfd;
+  border-top: 1px solid #a5d1f1;
+  border-bottom: 1px solid #a5d1f1;
   height: 30px;
   background-color: #d0ebfd;
 }
