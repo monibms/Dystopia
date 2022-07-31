@@ -152,6 +152,8 @@ th {
 .br {
   border-top: 3px solid #eee;
   border-bottom: 3px solid #eee;
+  height: 300px;
+  background-color: #eee;
 }
 
 html.is-fixed,
