@@ -149,8 +149,9 @@ th {
   padding: 15px;
 }
 
-line {
-  border: solid medium #FFFFFF ;
+.br {
+  border-top: 5px solid #000000;
+  border-bottom: 5px solid #000000;
 }
 
 html.is-fixed,
