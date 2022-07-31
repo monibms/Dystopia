@@ -150,10 +150,10 @@ th {
 }
 
 .br {
-  border-top: 3px solid #eee;
-  border-bottom: 3px solid #eee;
-  height: 300px;
-  background-color: #eee;
+  border-top: 3px solid #d0ebfd;
+  border-bottom: 3px solid #d0ebfd;
+  height: 30px;
+  background-color: #d0ebfd;
 }
 
 html.is-fixed,
