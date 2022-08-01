@@ -160,12 +160,12 @@ th {
   background-color: #fff;
 }
 
-p1 {
+p {
   margin: 0px;
 }
 
 @media(min-width: 900px) {
-p1 {
+p {
    margin-right: 100px;
    margin-left: 100px;
   }
