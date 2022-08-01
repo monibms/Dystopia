@@ -150,15 +150,16 @@ th {
   padding: 15px;
 }
 
+#example{
+  width:800px;
+}
+
 .br {
   border: 1px solid #eee;
   padding: 10px 20px;
   background-color: #fff;
 }
 
-.br2 {
-  border-top: 1px solid #eee;
-}
 
 html.is-fixed,
 html.is-fixed body {
