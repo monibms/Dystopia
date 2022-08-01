@@ -20,6 +20,7 @@ a {
 }
 .header {
   background-color: #F8FBFF;
+  border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
   width: 100%;
