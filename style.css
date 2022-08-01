@@ -178,6 +178,8 @@ html.is-fixed body {
 body {
 padding-right: 200px;
   width: 70%;
+border-right: 1px solid #eee;
+border-left: 1px solid #eee;
 }
 ul,
 h1,
