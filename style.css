@@ -164,7 +164,7 @@ p1 {
   color: blue;
 }
 
-@media(max-width: 900px) {
+@media(min-width: 900px) {
 p1 {
     color: red
   }
