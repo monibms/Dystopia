@@ -176,8 +176,7 @@ html.is-fixed body {
 @media screen and (min-width: 768px) {
 
 body {
-margin-right: 400px;
-margin-left: 200px;
+margin-right: 200px;
 padding: 0;
 }
 
@@ -190,7 +189,6 @@ p {
 }
 h1 {
   font-size: 20px;
-  padding: 0;
 }
 .header {
   background-color: #F8FBFF;
