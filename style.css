@@ -232,7 +232,6 @@ a {
   overflow-y: scroll;
   padding-top: 56px;
   position: fixed;
-  right: 200px;
   transition: all 0.3s;
   top: 0;
   width: 200px;
