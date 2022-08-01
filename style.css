@@ -173,7 +173,7 @@ html.is-fixed body {
   ここからPC幅
 ==================================== */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 767px) {
 
 body {
 margin-right: 200px;
