@@ -134,7 +134,7 @@ section {
 table {
   border-collapse: collapse;
   color: #333; /* 全体の文字色 */
-  background-color: #FFF; /* 全体の背景色 */
+  background-color: #F8FBFF; /* 全体の背景色 */
 }
 th, td {
   padding: 5px 15px;
