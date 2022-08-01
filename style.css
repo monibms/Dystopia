@@ -26,6 +26,14 @@ a {
   width: 100%;
   z-index: 30;
 }
+
+@media(min-width: 900px) {
+.header {
+   margin-right: 100px;
+   margin-left: 100px;
+  }
+}
+
 .header__inner {
   margin: 0;
   padding: 15px 0;
