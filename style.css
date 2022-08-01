@@ -181,10 +181,7 @@ padding: 0;
 }
 
 ul,
-h1 {
-margin-right: 200px;
-padding: 0;
-}
+h1,
 h2,
 p {
   margin: 0;
@@ -192,13 +189,9 @@ p {
 }
 h1 {
   font-size: 20px;
+  margin-right: 200px;
+  padding: 0;
 }
-a {
-  display: block;
-  text-decoration: none;
-}
-.fixed {
-/*   height: 100%; */
   position: fixed;
 /*   width: 100%; */
 }
