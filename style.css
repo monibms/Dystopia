@@ -160,7 +160,15 @@ th {
   background-color: #fff;
 }
 
+p1 {
+  color: blue;
+}
 
+@media(max-width: 900px) {
+p1 {
+    color: red
+  }
+}
 
 html.is-fixed,
 html.is-fixed body {
