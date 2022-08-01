@@ -177,6 +177,7 @@ html.is-fixed body {
 
 body {
 padding-right: 200px;
+padding-left: 200px;
   width: 70%;
 border-right: 1px solid #eee;
 border-left: 1px solid #eee;
@@ -190,7 +191,6 @@ p {
 }
 h1 {
   font-size: 20px;
-  padding-right: 200px;
 }
 .header {
   background-color: #F8FBFF;
