@@ -162,17 +162,6 @@ th {
   background-color: #fff;
 }
 
-#sample2 {
-  margin: 0px;
-}
-
-@media(min-width: 900px) {
-#sample2 {
-   margin-right: 100px;
-   margin-left: 100px;
-  }
-}
-
 html.is-fixed,
 html.is-fixed body {
   height: 100%;
@@ -184,8 +173,13 @@ html.is-fixed body {
   ここからPC幅
 ==================================== */
 
-@media screen and (min-width: 768px) {
-body,
+@media screen and (min-width: 900px) {
+
+body {
+margin-right: 200px;
+padding: 0;
+}
+
 ul,
 h1,
 h2,
