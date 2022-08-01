@@ -161,12 +161,13 @@ th {
 }
 
 p1 {
-  color: blue;
+  margin: 0px;
 }
 
 @media(min-width: 900px) {
 p1 {
-    color: red
+   margin-right: 100px;
+   margin-left: 100px;
   }
 }
 
