@@ -188,12 +188,9 @@ p {
   padding: 0;
 }
 h1 {
-  font-size: 80px;
+  font-size: 20px;
   margin-right: 200px;
   padding: 0;
-}
-  position: fixed;
-/*   width: 100%; */
 }
 .header {
   background-color: #F8FBFF;
