@@ -226,3 +226,15 @@ a {
 .header a {
   color: #000;
 }
+.sideMenu {
+  background-color: #fff;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 56px;
+  position: fixed;
+  right: 200px;
+  transition: all 0.3s;
+  top: 0;
+  width: 200px;
+  z-index: 200;
+}
