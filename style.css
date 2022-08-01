@@ -150,9 +150,9 @@ th {
 }
 
 .br {
-  border: 1px solid #a5d1f1;
+  border: 1px solid #eee;
   padding: 10px 20px;
-  background-color: #FFFDFA;
+  background-color: #fff;
 }
 
 html.is-fixed,
