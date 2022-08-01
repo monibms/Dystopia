@@ -155,6 +155,10 @@ th {
   background-color: #fff;
 }
 
+.br2 {
+  border-top: 1px solid #eee;
+}
+
 html.is-fixed,
 html.is-fixed body {
   height: 100%;
