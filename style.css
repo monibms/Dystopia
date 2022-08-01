@@ -175,11 +175,7 @@ html.is-fixed body {
 
 @media screen and (min-width: 768px) {
 
-body {
-margin-right: 200px;
-padding: 0;
-}
-
+body,
 ul,
 h1,
 h2,
