@@ -178,6 +178,8 @@ html.is-fixed body {
 body {
 border-right: 1px solid #eee;
 border-left: 1px solid #eee;
+ box-sizing: border-box;
+}
 }
 ul,
 h1,
