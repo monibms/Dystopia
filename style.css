@@ -195,6 +195,7 @@ padding-right: 300px;
 }
 .header {
   background-color: #F8FBFF;
+border-bottom: 1px solid #F8FBFF;
 }
 .header__inner {
   margin: 0;
