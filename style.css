@@ -189,7 +189,6 @@ p {
 }
 h1 {
   font-size: 24px;
-  text-decoration: underline;
   padding-right: 200px;
 }
 a {
@@ -330,6 +329,6 @@ padding-left: 100px;
 padding-top: 15px;
 }
 #example2 {
-margin-top: 68px;
+margin-top: 28px;
 }
 }
