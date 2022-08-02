@@ -176,8 +176,6 @@ html.is-fixed body {
 @media screen and (min-width: 768px) {
 
 body {
-padding-right: 250px;
-padding-left: 50px;
 border-right: 1px solid #eee;
 border-left: 1px solid #eee;
 }
@@ -195,7 +193,7 @@ padding-right: 300px;
 }
 .header {
   background-color: #F8FBFF;
-border-bottom: 1px solid #F8FBFF;
+border-bottom: 1px solid #eee;
 }
 .header__inner {
   margin: 0;
@@ -220,5 +218,10 @@ border-bottom: 1px solid #F8FBFF;
   top: 0;
   width: 200px;
   z-index: 200;
+}
+#sample {
+  padding: 15px;
+padding-right: 250px;
+padding-left: 50px;
 }
 }
