@@ -194,9 +194,6 @@ h1 {
 .header {
   background-color: #F8FBFF;
   border-bottom: 1px solid #eee;
-  position: fixed;
-  top: 0;
-  z-index: 30;
 margin-right: 400px;
 }
 .header__inner {
