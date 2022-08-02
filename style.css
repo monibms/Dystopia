@@ -203,7 +203,7 @@ a {
 }
 .header {
   background-color: #F8FBFF;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
   position: fixed;
   top: 0;
   width: 100%;
@@ -233,7 +233,7 @@ a {
   top: 0;
   width: 200px;
   z-index: 200;
-border-left: 1px solid #eee;
+border-left: 2px solid #eee;
 }
 
 .hamburger {
