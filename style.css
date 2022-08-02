@@ -178,7 +178,6 @@ html.is-fixed body {
 body {
 padding-right: 400px;
 padding-left: 200px;
-  width: 70%;
 border-right: 1px solid #eee;
 border-left: 1px solid #eee;
 }
@@ -203,7 +202,7 @@ h1 {
 .header__inner {
   margin: 0;
   padding: 15px 0;
-  width: 70%;
+  width: 100%;
 }
 .header li {
   list-style-type: none;
