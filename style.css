@@ -175,12 +175,7 @@ html.is-fixed body {
 
 @media screen and (min-width: 768px) {
 
-body {
-border-right: 1px solid #eee;
-border-left: 1px solid #eee;
- box-sizing: border-box;
-}
-}
+body,
 ul,
 h1,
 h2,
@@ -189,17 +184,31 @@ p {
   padding: 0;
 }
 h1 {
-  font-size: 20px;
+  font-size: 24px;
   text-decoration: underline;
-padding-right: 200px;
+  padding-right: 200px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.fixed {
+/*   height: 100%; */
+  position: fixed;
+/*   width: 100%; */
 }
 .header {
   background-color: #F8FBFF;
-border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
 }
 .header__inner {
   margin: 0;
   padding: 15px 0;
+  width: 100%;
 }
 .header li {
   list-style-type: none;
@@ -221,6 +230,88 @@ border-bottom: 1px solid #eee;
   width: 200px;
   z-index: 200;
 }
+
+.hamburger {
+  cursor: pointer;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  z-index: 300;
+}
+.hamburger span {
+  background-color: #111;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  transition: all 0.3s;
+  width: 30px;
+  display: none;
+}
+.hamburger__lineTop {
+  top: 20px;
+}
+.hamburger__lineCenter {
+  top: 29px;
+}
+.hamburger__lineBottom {
+  top: 38px;
+}
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 100;
+  display: none;
+}
+/* メニューが開いた時のCSS */
+.nav-open .sideMenu {
+  background-color: #fff;
+  right: 0;
+}
+.nav-open .hamburger__lineTop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav-open .hamburger__lineCenter {
+  left: 50%;
+  width: 0;
+}
+.nav-open .hamburger__lineBottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav-open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+section {
+  margin: 0 auto 200px;
+  text-align: center;
+  width: 80%;
+}
+.about {
+  background-color: #ffffbc;
+  margin-top: 200px;
+}
+.works {
+  background-color: #bcffdd;
+}
+.gallery {
+  background-color: #bcbcff;
+}
+.service {
+  background-color: #ffbcbc;
+}
+
 #sample {
 padding-right: 250px;
 padding-left: 50px;
