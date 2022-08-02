@@ -176,8 +176,8 @@ html.is-fixed body {
 @media screen and (min-width: 768px) {
 
 body {
-padding-right: 400px;
-padding-left: 200px;
+padding-right: 250px;
+padding-left: 50px;
 border-right: 1px solid #eee;
 border-left: 1px solid #eee;
 }
