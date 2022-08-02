@@ -198,6 +198,7 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 30;
+padding-right: 400px;
 }
 .header__inner {
   margin: 0;
