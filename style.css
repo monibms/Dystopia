@@ -51,7 +51,7 @@ a {
   transition: all 0.3s;
   top: 0;
   width: 200px;
-  z-index: 1;
+  z-index: 200;
 }
 
 .hamburger {
@@ -239,7 +239,7 @@ a {
   transition: all 0.3s;
   top: 0;
   width: 200px;
-  z-index: 1;
+  z-index: 200;
 border-left: 2px solid #eee;
 }
 
