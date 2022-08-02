@@ -197,7 +197,7 @@ h1 {
   position: fixed;
   top: 0;
   z-index: 30;
-padding-right: 400px;
+margin-right: 400px;
 }
 .header__inner {
   margin: 0;
