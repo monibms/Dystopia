@@ -191,11 +191,10 @@ p {
 h1 {
   font-size: 20px;
   text-decoration: underline;
+padding-right: 250px;
 }
 .header {
   background-color: #F8FBFF;
-  border-bottom: 1px solid #eee;
-margin-right: 400px;
 }
 .header__inner {
   margin: 0;
