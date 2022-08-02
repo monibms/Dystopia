@@ -189,7 +189,7 @@ p {
 h1 {
   font-size: 20px;
   text-decoration: underline;
-padding-right: 300px;
+padding-right: 250px;
 }
 .header {
   background-color: #F8FBFF;
@@ -220,7 +220,6 @@ border-bottom: 1px solid #eee;
   z-index: 200;
 }
 #sample {
-  padding: 15px;
 padding-right: 250px;
 padding-left: 50px;
 }
