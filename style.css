@@ -153,13 +153,16 @@ th {
 -webkit-text-size-adjust: 100%;
 }
 
+#sample2 {
+-webkit-text-size-adjust: 100%;
+}
+
 #example{
   margin-top: 18px;
 }
 
 #example2 {
 margin-top: 12px;
--webkit-text-size-adjust: 100%;
 }
 
 .br {
