@@ -150,6 +150,7 @@ th {
 
 #sample {
   padding: 15px;
+-webkit-text-size-adjust: 100%;
 }
 
 #example{
@@ -158,6 +159,7 @@ th {
 
 #example2 {
 margin-top: 12px;
+-webkit-text-size-adjust: 100%;
 }
 
 .br {
