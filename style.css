@@ -196,15 +196,12 @@ h1 {
   border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 30;
 padding-right: 400px;
 }
 .header__inner {
   margin: 0;
   padding: 15px 0;
-  width: 100%;
-padding-right: 1000px;
 }
 .header li {
   list-style-type: none;
