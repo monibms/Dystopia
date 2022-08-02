@@ -197,13 +197,13 @@ h1 {
   border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
-  width: 70%;
+  width: 100%;
   z-index: 30;
 }
 .header__inner {
   margin: 0;
   padding: 15px 0;
-  width: 100%;
+  width: 70%;
 }
 .header li {
   list-style-type: none;
