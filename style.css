@@ -184,7 +184,9 @@ html.is-fixed body {
 
 @media screen and (min-width: 961px) {
 
-body,
+body {
+overflow: scroll;
+}
 ul,
 h1,
 h2,
