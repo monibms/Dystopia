@@ -27,28 +27,26 @@ h2:after {
   background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
   margin-bottom: 5px;
 }
-
 h3 {
   position: relative;
-  display: inline-block;
-  padding: 0 45px;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
 }
 h3:before, h1:after {
   content: '';
   position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
   background-color: black;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
 }
 h3:before {
-  left:0;
+  left: 7px;
 }
 h3:after {
-  right: 0;
+  right: 7px;
 }
 a {
   display: block;
