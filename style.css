@@ -32,6 +32,7 @@ h3 {
   color: #000;/*文字色*/
   font-size: 16px;
   margin-top: 3px;
+  display: inline-block;
   background: transparent;/*背景透明に*/
   border-left: solid 5px #7db4e6;/*左線*/
 }
