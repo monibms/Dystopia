@@ -12,7 +12,8 @@ h1 {
 h2 {
   position: relative;
   font-size: 20px;
-  padding-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 h2:after {
   content: "";
@@ -23,7 +24,7 @@ h2:after {
   height: 7px;
   background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
   background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 a {
   display: block;
@@ -218,7 +219,8 @@ h1 {
 h2 {
   position: relative;
   font-size: 20px;
-  padding-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 h2:after {
   content: "";
@@ -229,7 +231,7 @@ h2:after {
   height: 7px;
   background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
   background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 a {
   display: block;
