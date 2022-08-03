@@ -28,25 +28,10 @@ h2:after {
   margin-bottom: 5px;
 }
 h3 {
-  position: relative;
-  padding: 0.25em 1em;
-  border-top: solid 2px black;
-  border-bottom: solid 2px black;
-}
-h3:before, h1:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: black;
-}
-h3:before {
-  left: 7px;
-}
-h3:after {
-  right: 7px;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
 }
 a {
   display: block;
