@@ -2,6 +2,7 @@ body,
 ul,
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -25,6 +26,29 @@ h2:after {
   background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
   background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
   margin-bottom: 5px;
+}
+
+h3 {
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+}
+h3:before, h1:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: black;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+h3:before {
+  left:0;
+}
+h3:after {
+  right: 0;
 }
 a {
   display: block;
