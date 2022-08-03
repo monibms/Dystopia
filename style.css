@@ -12,6 +12,7 @@ h1 {
 h2 {
   position: relative;
   font-size: 20px;
+  padding-bottom: 2px;
 }
 h2:after {
   content: "";
