@@ -201,6 +201,7 @@ margin-top: 12px;
 .br2 {
   position: relative;
   padding: 1rem .5rem;
+  display: inline-block;
 }
 
 .br2:after {
