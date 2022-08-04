@@ -215,7 +215,6 @@ margin-top: 12px;
   background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
   background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
-  display: inline-block;
 }
 
 html.is-fixed,
