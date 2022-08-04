@@ -221,6 +221,10 @@ margin-top: 12px;
   background: linear-gradient(transparent 70%, #a8eaff 70%);
 }
 
+.under2 {
+  background: linear-gradient(transparent 70%, #ff99ab 70%);
+}
+
 html.is-fixed,
 html.is-fixed body {
   height: 100%;
