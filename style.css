@@ -451,3 +451,34 @@ padding-top: 15px;
 margin-top: 38px;
 }
 }
+.toggle_title {
+	font-weight: bold;
+	line-height: 42px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.toggle_title:hover {
+	color: #fd7e00;
+}
+.toggle_title:after {
+	content: "";
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background:url(btn_arrow.png) no-repeat right top;
+	position:absolute;
+	top: 50%;
+	right: 7px;
+	transform: translateY(-50%);
+	transition: 0.2s;
+}
+.toggle_title.selected:after {
+	transform: translateY(-50%) rotate(180deg);
+	transition: 0.2s;
+}
+.toggle_txt {
+	display: none;
+}
