@@ -232,36 +232,48 @@ html.is-fixed body {
 }
         
 
-.toggle_title {
-	font-weight: bold;
-	line-height: 42px;
-	margin: 0;
-	padding: 0 0 0 10px;
-	position: relative;
-	cursor: pointer;
-	transition: 0.3s;
-}
-.toggle_title:hover {
-	color: #fd7e00;
-}
-.toggle_title:after {
-	content: "";
-	display: inline-block;
-	width: 28px;
-	height: 28px;
-	background:url(btn_arrow.png) no-repeat right top;
-	position:absolute;
-	top: 50%;
-	right: 7px;
-	transform: translateY(-50%);
-	transition: 0.2s;
-}
-.toggle_title.selected:after {
-	transform: translateY(-50%) rotate(180deg);
-	transition: 0.2s;
-}
-.toggle_txt {
+/*ベース*/
+.toggle {
 	display: none;
+}
+.Label {		/*タイトル*/
+	padding: 1em;
+	display: block;
+	color: #fff;
+	background:#019ac6;
+}
+.Label::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,
+.content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.content {		/*本文*/
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+}
+.toggle:checked + .Label + .content {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
 }
 
 /* ====================================
