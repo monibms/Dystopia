@@ -288,7 +288,7 @@ html.is-fixed body {
   border-top: solid 2px #fff;
   content: "";
   display: block;
-  height: 8px;
+  height: 16px;
   position: absolute;
   right: 25px;
   top: 38%;
