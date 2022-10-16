@@ -288,13 +288,13 @@ html.is-fixed body {
   border-top: solid 2px #fff;
   content: "";
   display: block;
-  height: 16px;
+  height: 8px;
   position: absolute;
   right: 25px;
   top: 38%;
   transform: rotate(135deg);
   transition: transform .3s ease-in-out, top .3s ease-in-out;
-  width: 8px;
+  width: 16px;
 }
 .accordion-title.open::after {
   top: 45%;
