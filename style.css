@@ -297,7 +297,7 @@ html.is-fixed body {
   width: 8px;
 }
 .accordion-title.open::after {
-  top: 35%;
+  top: 38%;
   transform: rotate(-45deg);
 }
 
