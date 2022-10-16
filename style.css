@@ -247,6 +247,7 @@ html.is-fixed body {
 }
 .accordion-content {
   display: none;
+  padding: 10px 20px;
 }
 .accordion-content p {
   font-size: 13px;
