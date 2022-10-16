@@ -284,14 +284,14 @@ html.is-fixed body {
   position: relative;
 }
 .accordion-title::after {
-  border-right: solid 2px #fff;
-  border-top: solid 2px #fff;
+  border-right: solid 2px #0d90f3;
+  border-top: solid 2px #0d90f3;
   content: "";
   display: block;
   height: 8px;
   position: absolute;
   right: 25px;
-  top: 50%;
+  top: 20%;
   transform: rotate(135deg);
   transition: transform .3s ease-in-out, top .3s ease-in-out;
   width: 8px;
