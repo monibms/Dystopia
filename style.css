@@ -239,13 +239,13 @@ html.is-fixed body {
 .Label {		/*タイトル*/
 	padding: 1em;
 	display: block;
-	color: #fff;
-	background:#019ac6;
+	color: #0d90f3;
+	background:#FFF;
 }
 .Label::before{		/*タイトル横の矢印*/
 	content:"";
 	width: 6px;
-	height: 6px;
+	height: 4px;
 	border-top: 2px solid #fff;
 	border-right: 2px solid #fff;
 	-webkit-transform: rotate(45deg);
