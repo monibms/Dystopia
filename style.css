@@ -245,9 +245,9 @@ html.is-fixed body {
 .Label::before{		/*タイトル横の矢印*/
 	content:"";
 	width: 6px;
-	height: 4px;
-	border-top: 2px solid #fff;
-	border-right: 2px solid #fff;
+	height: 6px;
+	border-top: 2px solid #0d90f3;
+	border-right: 2px solid #0d90f3;
 	-webkit-transform: rotate(45deg);
 	position: absolute;
 	top:calc( 50% - 3px );
