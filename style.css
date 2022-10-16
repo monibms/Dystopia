@@ -241,7 +241,7 @@ html.is-fixed body {
   width: 100%;
 }
 .accordion-title {
-  color: #fff;
+  color: #0d90f3;
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
@@ -256,7 +256,7 @@ html.is-fixed body {
 }
 /* タイトルの背景色 */
 .accordion-item:nth-of-type(1) .accordion-title {
-  background-color: #7f7fff;
+  background-color: #d0ebfd;
 }
 .accordion-item:nth-of-type(2) .accordion-title {
   background-color: #66cdaa;
@@ -266,9 +266,9 @@ html.is-fixed body {
 }
 /* コンテンツボックスの枠線 */
 .accordion-item:nth-of-type(1) .accordion-content {
-  border-bottom: 2px solid #7f7fff;
-  border-left: 2px solid #7f7fff;
-  border-right: 2px solid #7f7fff;
+  border-bottom: 2px solid #d0ebfd;
+  border-left: 2px solid #d0ebfd;
+  border-right: 2px solid #d0ebfd;
 }
 .accordion-item:nth-of-type(2) .accordion-content {
   border-bottom: 2px solid #66cdaa;
