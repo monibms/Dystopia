@@ -28,9 +28,16 @@ $(function () {
   });
 });
 
-$(function(){
-	$('.toggle_title').click(function(){
-		$(this).toggleClass('selected');
-		$(this).next().slideToggle();
-	});
+$(function () {
+  // 最初のコンテンツは表示
+  $(".accordion-item:first-of-type .accordion-content").css("display", "block");
+  // 最初の矢印は開いた時の状態に
+  $(".accordion-item:first-of-type .js-accordion-title").addClass("open");
+  // タイトルをクリックすると
+  $(".js-accordion-title").on("click", function () {
+    // クリックした次の要素を開閉
+    $(this).next().slideToggle(300);
+    // タイトルにopenクラスを付け外しして矢印の向きを変更
+    $(this).toggleClass("open", 300);
+  });
 });
