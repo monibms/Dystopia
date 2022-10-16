@@ -29,10 +29,6 @@ $(function () {
 });
 
 $(function () {
-  // 最初のコンテンツは表示
-  $(".accordion-item:first-of-type .accordion-content").css("display", "block");
-  // 最初の矢印は開いた時の状態に
-  $(".accordion-item:first-of-type .js-accordion-title").addClass("open");
   // タイトルをクリックすると
   $(".js-accordion-title").on("click", function () {
     // クリックした次の要素を開閉
