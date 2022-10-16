@@ -232,47 +232,51 @@ html.is-fixed body {
 }
         
 
-/*ベース*/
-.toggle {
-	display: none;
+.accordion-item:nth-of-type(1) .accordion-title {
+  background-color: #7f7fff;
 }
-.Label {		/*タイトル*/
-	display: block;
-	color: #0d90f3;
-	background:#FFF;
+.accordion-item:nth-of-type(2) .accordion-title {
+  background-color: #66cdaa;
 }
-.Label::before{		/*タイトル横の矢印*/
-	content:"";
-	width: 6px;
-	height: 6px;
-	border-top: 2px solid #0d90f3;
-	border-right: 2px solid #0d90f3;
-	-webkit-transform: rotate(45deg);
-	position: absolute;
-	top:calc( 50% - 3px );
-	right: 20px;
-	transform: rotate(135deg);
+.accordion-item:nth-of-type(3) .accordion-title {
+  background-color: #ff7f7f;
 }
-.Label,
-.content {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transform: translateZ(0);
-	transition: all 0.3s;
+/* コンテンツボックスの枠線 */
+.accordion-item:nth-of-type(1) .accordion-content {
+  border-bottom: 2px solid #7f7fff;
+  border-left: 2px solid #7f7fff;
+  border-right: 2px solid #7f7fff;
 }
-.content {		/*本文*/
-	height: 0;
-	margin-bottom:10px;
-	padding:0 20px;
-	overflow: hidden;
+.accordion-item:nth-of-type(2) .accordion-content {
+  border-bottom: 2px solid #66cdaa;
+  border-left: 2px solid #66cdaa;
+  border-right: 2px solid #66cdaa;
 }
-.toggle:checked + .Label + .content {	/*開閉時*/
-	height: auto;
-	padding:20px ;
-	transition: all .3s;
+.accordion-item:nth-of-type(3) .accordion-content {
+  border-bottom: 2px solid #ff7f7f;
+  border-left: 2px solid #ff7f7f;
+  border-right: 2px solid #ff7f7f;
 }
-.toggle:checked + .Label::before {
-	transform: rotate(-45deg) !important;
+/* 矢印 */
+.accordion-title {
+  position: relative;
+}
+.accordion-title::after {
+  border-right: solid 2px #fff;
+  border-top: solid 2px #fff;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 25px;
+  top: 38%;
+  transform: rotate(135deg);
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+  width: 8px;
+}
+.accordion-title.open::after {
+  top: 45%;
+  transform: rotate(-45deg);
 }
 
 /* ====================================
