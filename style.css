@@ -233,12 +233,7 @@ html.is-fixed body {
         
 
 .accordion {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  max-width: 300px;
   position: relative;
-  width: 100%;
 }
 .accordion-title {
   color: #0d90f3;
