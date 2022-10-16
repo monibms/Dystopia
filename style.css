@@ -244,10 +244,10 @@ html.is-fixed body {
   color: #0d90f3;
   cursor: pointer;
   font-size: 16px;
+  padding: 10px 20px;
 }
 .accordion-content {
   display: none;
-  padding: 10px 20px;
 }
 .accordion-content p {
   font-size: 13px;
