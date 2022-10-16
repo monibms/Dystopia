@@ -237,7 +237,6 @@ html.is-fixed body {
 	display: none;
 }
 .Label {		/*タイトル*/
-	padding: 1em;
 	display: block;
 	color: #0d90f3;
 	background:#FFF;
