@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+.table_01 {
+	margin:0px 0px 15px 10px;
+	padding:0px;
+}
+.table_01 th {
+	width:120px;
+	height:30px;
+	padding:4px 2px 2px 4px;
+	text-align:right;
+	color:#999999;
+	font-size:12px;
+	border:1px solid #BBBBBB;
+	background: #FFE8FF;
+	font-weight: bold;
+}
+.table_01 td {
+	padding:5px;
+	border:1px solid #999999;
+	font-size:12px;
+}
+
+.table_02 {
+	padding:0px;
+	border-spacing:1px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+.table_02 th {
+	padding:5px;
+	text-align:left;
+	font-size:11px;
+	border:1px solid #BBBBBB;
+	background: #FFE1FF;
+}
+.table_02 td {
+	padding:5px;
+	font-size:11px;
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+.table_03 {
+	width:95%;
+	padding:0px;
+	border-spacing:1px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+.table_03 th {
+	padding:2px;
+	text-align:left;
+	color:#CC00CC;
+	font-size:11px;
+	border:1px solid #BBBBBB;
+	background: #FFE1FF;
+}
+.table_03 td {
+	padding:2px;
+	font-size:11px;
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+
+.table_info {
+	margin:0px auto 15px;
+	padding:0px;
+}
+.table_info th {
+	width:80px;
+	height:30px;
+	padding:4px 2px 2px 4px;
+	text-align:left;
+	color:#666666;
+	font-size:12px;
+	border:1px solid #BBBBBB;
+	background: #FFECEC;
+}
+.table_info td {
+	padding:5px;
+	border:1px solid #999999;
+	font-size:12px;
+}
+.cal {
+	padding:0px;
+	border-spacing:1px;
+	margin: 0px auto 15px;
+}
+.cal th {
+	padding:5px;
+	text-align:center;
+	font-size:11px;
+	border:1px solid #BBBBBB;
+	background: #FFE1FF;
+}
+.cal td {
+	padding:5px;
+	font-size:11px;
+	border: 1px solid #999999;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+#loading {
+	display: none;
+	width: 100px;
+	height: 30px;
+	background: url(../images/loading.gif) no-repeat center top;
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* ページ繰りのスタイル */
+.pager {
+	text-align: center;
+	clear: both;
+}
+
+.pager .list {
+	padding: 0.3em 0.5em;
+	display: inline-block;  /* 縦方向のpaddingを有効にしつつ、インライン表示を可能にする */
+	color: #0000FF;
+	border: 1px solid #999999;
+	font-weight: bold;
+	background: #eeeeee;
+	font-size: 12px;
+}
+.pager  A.list  {
+	padding: 0.3em 0.5em;
+	display: inline-block;
+	background: #FFFFFF;
+	border: 1px solid #999999;
+}
+
+.pager A.list:hover,
+.pager A.list:active {
+	border: 1px solid #000000;
+	color: #fff;
+	background: #000099;
+}
+
+/* 文字指定
+-------------------------------------------*/
+
+.text1020 {
+	font-size: 10px;
+	line-height: 15px;
+}
+
+
+.txt1220 {
+	font-size: 12px;
+	line-height: 20px;
+}
+.txt1220st {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+}
+.txt1225b {
+	font-size: 12px;
+	line-height: 25px;
+	color: #FF3300;
+}
+
+.text1420e {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #000000;
+}
+.text1420b {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #000066;
+	text-decoration: underline;
+}
+
+.text1420w {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+}
+.text1425r {
+	font-size: 14px;
+	line-height: 25px;
+	color: #FF0000;
+}
+
+.txt1425 {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.txt1620 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 25px;
+}
+.txt1620r {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.text1625re {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+	color: #000000;
+	
+}
+.txtbig {
+	font-size: 18px;
+	font-weight: bold;
+}
+.m {
+	margin-bottom: 15px;
+}
+.mtb {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.mlb {
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+
+.clear {
+clear:both;
+}
+A.btns {
+	display: block;
+	width: 150px;
+	color: #000099;
+	border: 2px outset #EEEEEE;
+	text-decoration: none;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	background: #E6EBFF;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 16px;
+	line-height: 25px;
+	float: right;
+}
+A.btns:hover {
+	color: #FF0000;
+	border: 2px inset #DDDDDD;
+	background: #E1E2FD;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+A.btns:active  { color: #FF99FF; }
