@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!cmnurl!/style.css" rel="stylesheet" type="text/css">
+<title>!html_title! &gt; 暗証キー入力</title>
+</head>
+<body>
+<div id="head"><strong>!html_title! &gt; 暗証キー入力</strong></div>
+
+<div id="back-btn">
+	<input type="button" value="CLOSE" onclick="window.close()" class="button color green small">
+</div>
+
+<div id="panel">
+<p>
+	!icon:lock.png!
+	暗証キーを入力してください。
+</p>
+<form action="!upload_cgi!" method="post">
+<input type="hidden" name="pwdkey" value="1">
+<input type="hidden" name="get" value="!num!">
+<p class="pwd">
+	<input type="password" name="key">
+	<input type="submit" value="認証">
+</p>
+</form>
+</div>
+
+</body>
+</html>

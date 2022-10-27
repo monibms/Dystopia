@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!cmnurl!/style.css" rel="stylesheet">
+<title>!html_title! &gt; ファイル削除</title>
+</head>
+<body>
+<div id="head"><strong>!html_title! &gt; ファイル削除</strong></div>
+
+<div id="back-btn">
+	<input type="button" value="Back" class="button small color green" onclick="window.open('!upload_cgi!','_self')">
+</div>
+
+<div id="panel">
+<p>次のファイルを削除します。「削除キー」を入力してください。</p>
+
+<form action="!upload_cgi!" method="post">
+<input type="hidden" name="del" value="!num!">
+<input type="hidden" name="delkey" value="1">
+<table id="list">
+<tr>
+	<th>ファイル</th>
+	<td><b>!fname!</b></td>
+</tr><tr>
+	<th>登録日時</th>
+	<td>!date!</td>
+</tr><tr>
+	<th>コメント</th>
+	<td>!comment!</td>
+</tr><tr>
+	<th>削除キー</th>
+	<td>
+		<input type="password" name="key" size="10">
+		<input type="submit" value="送信">
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

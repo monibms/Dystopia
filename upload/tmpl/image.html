@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="!cmnurl!/style.css" rel="stylesheet">
+<link href="!cmnurl!/view/viewer.min.css" rel="stylesheet">
+<title>!html_title! &gt; 画像表記</title>
+</head>
+<body oncontextmenu="return false;">
+<div id="head-view"><a href="#" onclick="window.close()">画面を閉じる</a></div>
+<div class="ta-c">
+
+<div id="wrapper">
+	<img id="zoomImg" src="!link!" alt="" class="thumb img">
+	<p>拡大するには画像をクリックしてください。</p>
+</div>
+
+<script src="!cmnurl!/view/viewer.min.js"></script>
+<script>
+const img = document.getElementById('zoomImg');
+const viewer = new Viewer(img, {
+  backdrop: true,
+  button: true,
+  navbar: false,
+  title: false,
+  toolbar: true,
+  className: 'img-popup',
+  container: '#wrapper',
+  fullscreen: true,
+  keyboard: true,
+  movable: true,
+  zoomable: true,
+  rotatable: false,
+  toggleOnDblclick: false,
+  tooltip: false,
+  transition: true,
+		});
+</script>
+
+</div>
+</body>
+</html>
