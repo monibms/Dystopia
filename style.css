@@ -36,12 +36,9 @@ h3 {
   border-left: solid 5px #7db4e6;/*左線*/
 }
 
-a,
-a:visited,
-a:hover,
-a:active {
-  color: blue;
-}
+a {
+  display: block;
+  text-decoration: none;
 
 .fixed {
 /*   height: 100%; */
