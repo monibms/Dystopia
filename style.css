@@ -35,13 +35,12 @@ h3 {
   background: transparent;/*背景透明に*/
   border-left: solid 5px #7db4e6;/*左線*/
 }
-a {
-  display: block;
-  text-decoration: none;
-}
 
-a:link, a:visited, a:hover, a:active {
-  color: blue;
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 .fixed {
