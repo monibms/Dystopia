@@ -41,7 +41,6 @@ a:visited,
 a:hover,
 a:active {
   color: blue;
-  color: inherit;
 }
 
 .fixed {
