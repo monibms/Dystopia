@@ -39,6 +39,11 @@ a {
   display: block;
   text-decoration: none;
 }
+
+a:link, a:visited, a:hover, a:active {
+  color: blue;
+}
+
 .fixed {
 /*   height: 100%; */
   position: fixed;
