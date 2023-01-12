@@ -230,6 +230,11 @@ html.is-fixed body {
   height: 100%;
   overflow: hidden;
 }
+
+/* ずれるコンテンツ側に指定するCSS */
+.under-content {
+	position: relative;
+}
         
 
 .accordion {
