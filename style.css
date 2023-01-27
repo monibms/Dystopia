@@ -233,6 +233,11 @@ html.is-fixed body {
   overflow: hidden;
 }
 
+/* ずれるコンテンツ側に指定するCSS */
+.under-content {
+	position: relative;
+}
+
 .accordion {
   position: relative;
 }
