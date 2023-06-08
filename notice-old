@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3H9QLCBCD4&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220201324-1');
+</script>
+
+<title>Dystopia難易度表</title>
+<meta name="google-site-verification" content="F6Q7xJyM044_ATTpnBjnKWwwGQ7H1h3WNa1O5AqXDwE">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Script-Type" content="text/javascript"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="style.js"></script> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="bmstable" content="./dystopia_header.json"> <!--　読み込む難易度表のヘッダファイルをここに指定　-->
+<link href="style.css" rel="stylesheet" type="text/css" media="screen,print">
+<!-- <script src="style.js"></script>// --> 
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+
+</head> 
+
+<body bgcolor="#FFFFFE" class="">
+<header class="header">
+  <section class="header__inner">
+    <h1>お知らせ(旧)</h1>
+    <div class="overlay" id="js-overlay"></div>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__lineTop"></span>
+      <span class="hamburger__lineCenter"></span>
+      <span class="hamburger__lineBottom"></span>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="style.js"></script>
+    </div>
+    <div class="sideMenu">
+    <nav>
+        <ul>
+              <li>
+            <a href="index.html">　HOME　</a>
+          </li>
+          <li>
+            <a href="overview.html">　概要　</a>
+          </li>
+          <li>
+            <a href="remind.html">　Remind　</a>
+          </li>
+          <li>
+            <a href="rule.html">　ルール　</a>
+          </li>
+          <li>
+            <a href="notice.html">　お知らせ　</a>
+          </li>
+          <li>
+            <a href="changelog/2023.html">　更新履歴　</a>
+          </li>
+          <li>
+            <a href="vote.html">　難易度変更提案＆投票　</a>
+          </li>
+          <li>
+            <a href="request.html">　新規搭載リクエスト　</a>
+          </li>
+          <li>
+            <a href="other.html">　その他　</a>
+          </li>
+          <div style="margin-bottom:100px;">
+          <li>
+            <a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=mypage&playerid=061019" target="_blank">　管理人 (LR2IR)　</a>
+          </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
+  
+<br><br>
+<div id="sample">
+  
+<h2>2022.6.30</h2>
+｢難易度変更提案｣ページにて下記2点のルール変更<br>
+・[投票について]の項目について、dy0-4の全ての変更提案及びdy5-7の削除提案において2票以上の賛成票を必要とするよう変更<br>
+・[制限、その他]の項目について、1ヶ月あたりの提案上限回数を5→7回に変更<br><br>
+
+<h2>2022.5.13</h2>
+本日より難易度表が本公開となります、これによりルールに則った難易度の変更や搭載が行われます。<br>
+本公開に伴い、dy？からいくつかの譜面を削除しました。<br><br>
+
+<a href="https://docs.google.com/spreadsheets/d/1gJ9uXCUVo4a-uNlWPXGzoJDynG8uJ9Q3AtTDSYbV-Vk/edit" style="display:inline">第1回難易度調査アンケート集計結果</a>が公開されました。<br><br>
+
+ホームに<a href="dystopia_vote.html" style="display:inline">提案＆投票</a>及び<a href="dystopia_request.html" style="display:inline">新規搭載リクエスト</a>へのリンクが設置されました。<br>
+単曲単位でいつでも難易度の変更提案や楽曲のリクエストができるようになりました。<br><br>
+
+Dystopia難易度表パッケージが公開されました。<br>
+<a href="dystopia_other.html" style="display:inline">その他</a>のページにリンクを用意しましたのでご確認くださいませ(怒られたら予告無く消します)。<br><br>
+  
+<h2>2022.5.9</h2>
+第1回難易度調査アンケート終了<br>
+集計期間は5/9〜5/13を予定、難易度に変更がある場合は5/13の更新で反映予定です。<br>
+次回アンケートは開催期間2週間で、6月中旬頃からを予定しております。<br><br>
+  
+<h2>2022.5.2</h2>
+単曲回答用フォームの<a href="https://docs.google.com/forms/d/1uSlEmr7x7rB3PUxgQbfIKWENhHn7Khucgjh1AyOI0Ck/viewform?edit_requested=true" style="display:inline">難易度調査アンケート(単曲)</a>を設営いたしました。<br>
+詳しくは｢<a href="dystopia_questionnaire.html" style="display:inline">難易度調査アンケート</a>｣のページトップをご覧くださいませ。<br><br>
+
+<h2>2022.4.28</h2>
+誠に勝手ながら、諸事情により第1回難易度調査アンケートの締め切り日を5/8まで延長致します。<br>
+また、本アンケートの集計及び難易度表への結果反映をもちまして、難易度表の本公開とさせていただく予定です。<br><br>
+  
+<h2>2022.4.1</h2>
+0:00<br>
+本日より、第1回難易度調査アンケートを開始。<br>
+アンケートページはこちら｢<a href="dystopia_questionnaire.html" style="display:inline">難易度調査アンケート</a>｣<br>
+22:00<br>
+｢<a href="dystopia_remind.html" style="display:inline">Remind</a>｣ページの[更新について]の内容を更新いたしました。<br><br>
+
+
+<h2>2022.3.17</h2>
+この度、お知らせ欄を設営させていただきました！<br>
+難易度表の本公開前に、ユーザーのみなさまへ向けて｢第1回難易度調査アンケート｣を行いたいと思います。<br>
+難易度調査アンケートは4月頃を予定しておりますので、難易度変更を希望する差分をお手元のメモ等に控えてお待ちくださいませ。<br>
+※アンケート開始前までに管理人によって難易度が変更されるものもありますので、アンケート前には再度難易度表をご確認くださいますようお願い致します。<br><br>
+
+<h2>2022.2.10</h2>
+第一次差分搭載完了、難易度表仮完成！<br>
+本日より仮公開いたします。本公開日は未定です。<br><br>
+  
+<h2>2022.1.1〜</h2>
+設営作業中…<br>
+予定 : 差分収集→アバウト搭載→難易度評価、振り分け→仮完成
+<br><br>
+</div>
