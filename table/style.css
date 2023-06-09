@@ -1,0 +1,490 @@
+body,
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  position: relative;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  margin-bottom: 5px;
+}
+h3 {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #000;/*文字色*/
+  font-size: 16px;
+  margin-top: 2px;
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.fixed {
+/*   height: 100%; */
+  position: fixed;
+/*   width: 100%; */
+}
+.header {
+  background-color: #F8FBFF;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+
+.header__inner {
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+}
+.header li {
+  list-style-type: none;
+  margin-top: 30px;
+  text-align: left;
+}
+.header a {
+  color: #000;
+}
+.sideMenu {
+  background-color: #fff;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 56px;
+  position: fixed;
+  right: -200px;
+  transition: all 0.3s;
+  top: 0;
+  width: 200px;
+  z-index: 200;
+}
+
+.hamburger {
+  cursor: pointer;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  z-index: 300;
+}
+.hamburger span {
+  background-color: #111;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  transition: all 0.3s;
+  width: 30px;
+}
+.hamburger__lineTop {
+  top: 20px;
+}
+.hamburger__lineCenter {
+  top: 29px;
+}
+.hamburger__lineBottom {
+  top: 38px;
+}
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 100;
+}
+/* メニューが開いた時のCSS */
+.nav-open .sideMenu {
+  background-color: #fff;
+  right: 0;
+}
+.nav-open .hamburger__lineTop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav-open .hamburger__lineCenter {
+  left: 50%;
+  width: 0;
+}
+.nav-open .hamburger__lineBottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav-open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+section {
+  margin: 0 auto 200px;
+  text-align: center;
+  width: 80%;
+}
+.about {
+  background-color: #ffffbc;
+  margin-top: 200px;
+}
+.works {
+  background-color: #bcffdd;
+}
+.gallery {
+  background-color: #bcbcff;
+}
+.service {
+  background-color: #ffbcbc;
+}
+
+
+table {
+  border-collapse: collapse;
+  color: #333; /* 全体の文字色 */
+  background-color: #FFFFFE; /* 全体の背景色 */
+}
+th, td {
+  padding: 5px 15px;
+  border: solid 1px #a5d1f1;
+}
+th {
+  color: #0d90f3;/* 見出しの文字色 */
+  background-color: #d0ebfd; /* 見出しの背景色 */
+} 
+
+#sample {
+  padding: 15px;
+-webkit-text-size-adjust: 100%;
+}
+
+#sample2 {
+-webkit-text-size-adjust: 100%;
+}
+
+#example{
+  margin-top: 18px;
+}
+
+#example2 {
+margin-top: 12px;
+}
+
+.br {
+  border: 1px solid #eee;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.br2 {
+  position: relative;
+  padding: 1rem .5rem;
+  display: inline-block;
+}
+
+.br2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
+}
+
+.under {
+  background: linear-gradient(transparent 70%, #a8eaff 70%);
+}
+
+.under2 {
+  background: linear-gradient(transparent 70%, #ff99ab 70%);
+}
+
+html.is-fixed,
+html.is-fixed body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ずれるコンテンツ側に指定するCSS */
+.under-content {
+	position: relative;
+}
+
+.accordion {
+  position: relative;
+}
+.accordion-title {
+  color: #0d90f3;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0px 20px;
+}
+.accordion-content {
+  display: none;
+}
+.accordion-content p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* タイトルの背景色 */
+.accordion-item:nth-of-type(1) .accordion-title {
+  border: 2px solid #d0ebfd;
+}
+.accordion-item:nth-of-type(2) .accordion-title {
+  background-color: #66cdaa;
+}
+.accordion-item:nth-of-type(3) .accordion-title {
+  background-color: #ff7f7f;
+}
+/* コンテンツボックスの枠線 */
+.accordion-item:nth-of-type(1) .accordion-content {
+  border-bottom: 2px solid #d0ebfd;
+  border-left: 2px solid #d0ebfd;
+  border-right: 2px solid #d0ebfd;
+}
+.accordion-item:nth-of-type(2) .accordion-content {
+  border-bottom: 2px solid #66cdaa;
+  border-left: 2px solid #66cdaa;
+  border-right: 2px solid #66cdaa;
+}
+.accordion-item:nth-of-type(3) .accordion-content {
+  border-bottom: 2px solid #ff7f7f;
+  border-left: 2px solid #ff7f7f;
+  border-right: 2px solid #ff7f7f;
+}
+/* 矢印 */
+.accordion-title {
+  position: relative;
+}
+.accordion-title::after {
+  border-right: solid 2px #0d90f3;
+  border-top: solid 2px #0d90f3;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 25px;
+  top: 20%;
+  transform: rotate(135deg);
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+  width: 8px;
+}
+.accordion-title.open::after {
+  top: 38%;
+  transform: rotate(-45deg);
+}
+
+/* ====================================
+  ここからPC幅
+==================================== */
+
+@media screen and (min-width: 961px) {
+
+body {
+overflow: scroll;
+}
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 24px;
+  padding-right: 200px;
+}
+h2 {
+  position: relative;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  margin-bottom: 5px;
+}
+h3 {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #000;/*文字色*/
+  font-size: 16px;
+  margin-top: 2px;
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.fixed {
+/*   height: 100%; */
+  position: fixed;
+/*   width: 100%; */
+}
+.header {
+  background-color: #F8FBFF;
+  border-bottom: 2px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+.header__inner {
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+}
+.header li {
+  list-style-type: none;
+  margin-top: 30px;
+  text-align: left;
+}
+.header a {
+  color: #000;
+}
+.sideMenu {
+  background-color: #fff;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 56px;
+  position: fixed;
+  right: 1px;
+  transition: all 0.3s;
+  top: 0;
+  width: 200px;
+  z-index: 200;
+border-left: 2px solid #eee;
+}
+
+.hamburger {
+  cursor: pointer;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  z-index: 300;
+}
+.hamburger span {
+  background-color: #111;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  transition: all 0.3s;
+  width: 30px;
+  display: none;
+}
+.hamburger__lineTop {
+  top: 20px;
+}
+.hamburger__lineCenter {
+  top: 29px;
+}
+.hamburger__lineBottom {
+  top: 38px;
+}
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 100;
+  display: none;
+}
+/* メニューが開いた時のCSS */
+.nav-open .sideMenu {
+  background-color: #fff;
+  right: 0;
+}
+.nav-open .hamburger__lineTop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav-open .hamburger__lineCenter {
+  left: 50%;
+  width: 0;
+}
+.nav-open .hamburger__lineBottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav-open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+section {
+  margin: 0 auto 200px;
+  text-align: center;
+  width: 80%;
+}
+.about {
+  background-color: #ffffbc;
+  margin-top: 200px;
+}
+.works {
+  background-color: #bcffdd;
+}
+.gallery {
+  background-color: #bcbcff;
+}
+.service {
+  background-color: #ffbcbc;
+}
+
+#sample {
+padding: 15px;
+padding-top: 30px;
+padding-right: 300px;
+padding-left: 100px;
+}
+#sample2 {
+padding-right: 300px;
+padding-left: 100px;
+}
+#sample3 {
+padding-top: 15px;
+}
+#example2 {
+margin-top: 38px;
+}
