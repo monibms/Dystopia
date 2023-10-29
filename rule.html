@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3H9QLCBCD4&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220201324-1');
+</script>
+
+<title>Dystopia難易度表</title>
+<meta name="google-site-verification" content="F6Q7xJyM044_ATTpnBjnKWwwGQ7H1h3WNa1O5AqXDwE">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Script-Type" content="text/javascript"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="style.js"></script> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="bmstable" content="./dystopia_header.json"> <!--　読み込む難易度表のヘッダファイルをここに指定　-->
+<link href="style.css" rel="stylesheet" type="text/css" media="screen,print">
+<!-- <script src="style.js"></script>// --> 
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+
+</head> 
+
+<body bgcolor="#FFFFFE" class="">
+<header class="header">
+  <section class="header__inner">
+    <h1>ルール</h1>
+    <div class="overlay" id="js-overlay"></div>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__lineTop"></span>
+      <span class="hamburger__lineCenter"></span>
+      <span class="hamburger__lineBottom"></span>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="style.js"></script>
+    </div>
+    <div class="sideMenu">
+    <nav>
+        <ul>
+           <li>
+            <a href="index.html">　HOME　</a>
+          </li>
+          <li>
+            <a href="overview.html">　概要　</a>
+          </li>
+          <li>
+            <a href="remind.html">　Remind　</a>
+          </li>
+          <li>
+            <a href="rule.html">　ルール　</a>
+          </li>
+          <li>
+            <a href="notice.html">　お知らせ　</a>
+          </li>
+          <li>
+            <a href="changelog/2023.html">　更新履歴　</a>
+          </li>
+          <li>
+            <a href="vote.html">　難易度変更提案＆投票　</a>
+          </li>
+          <li>
+            <a href="request.html">　新規搭載リクエスト　</a>
+          </li>
+          <li>
+            <a href="other.html">　その他　</a>
+          </li>
+<div style="margin-bottom:100px;">
+          <li>
+            <a href="https://twitter.com/dystopia0210">　X(Twitter)　</a>
+          </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
+  
+<br><br>
+<div id="sample">
+
+<h2>①難易度変更提案＆投票について</h2>
+<h3>概要</h3>
+本難易度表で搭載中の差分に関する、難易度変更提案及び投票を行えます。<br>
+24時間365日いつでも変更提案が可能。 <br><br>
+
+<h3>導入</h3>
+どなたでも参加可能です。<br>
+最初期に行った投票システムを見直し、もう少し手軽かつ簡単に提案や投票することが可能(？)なシステムに変更しました。<br>
+※試験的に運用のため至らない点があるかもしれません、ご承知おきください。<br><br>
+
+提案フォーム及び投票フォームには、PLAYER IDとPLAYER NAMEの入力が必須になります。<br>
+<u>提案状況は常時公開とするためID及びNAMEが公開されます、ご容赦くださいませ。</u><br><br>
+
+提案＆投票の前には、本ページ内容に目を通していただくようお願いいたします。<br><br>
+
+<h3>提案について</h3>
+いつでも好きな時に提案フォームから難易度昇格、降格提案及び削除、隔離提案(dy？行き)が可能です。<br>
+dy0より弱いまたはdy7より強いと思われる譜面に関しては、削除提案や隔離提案ではなく降格提案もしくは昇格提案で提案をお願いいたします。<br>
+投票結果が開示されたものに関しては、すぐにまた提案を出すことが可能です。<br><br>
+
+<h3>提案フォームについて</h3>
+提案フォームは下記6つの項目に分かれてます。<br>
+1回答につき1曲とし、それぞれの項目に従った回答をお願いします。<br><br>
+
+<span class="under">・PLAYER ID</span><br>
+LR2IR ID、MinIR ID、MochaIR IDのいずれかを記載してください。<br>
+※IDのみ記載してください。beatorajaプレイヤーにおいて、上記どちらのIRにも登録していない場合は[ID無し]と記載してください。<br>
+また、各IRにおけるIDの記載場所は下記の通りです。<br>
+LR2IR : マイページのLR2IDを参照<br>
+MinIR : サイトにログイン後、User PageのUSER IDを参照<br>
+MochaIR : サイトにログイン後、画面左上のUserネームからマイページを開き、URLの末尾id=以下を参照<br><br>
+
+<span class="under">・IDに対応するIR</span><br>
+上記で記載したIDがLR2IR、MinIR、MochaIRどれに対応するものなのか選択してください。
+※IDを[記載無し]とした場合は、[該当無し]を選択してください。
+
+<span class="under">・PLAYER NAME</span><br>
+Stella難易度表様、Twitter、IRでの名前等自由に記載ください。<br><br>
+
+<span class="under">・現在搭載中の難易度</span><br>
+変更提案を行った差分が現在搭載されている難易度を選択してください。<br><br>
+
+<span class="under">・曲名</span><br>
+平衡世界 [miracle] <br>
+<u>上記のように差分名まで記載ください。</u><br>
+IR等からのコピー＆ペーストを推奨します。<br><br>
+
+<span class="under">・希望提案</span><br>
+昇格希望提案、降格希望提案、削除希望提案、隔離希望提案の4つから1つお選びください。<br><br>
+
+<h3>投票について</h3>
+提案者が提案した案件に対して、賛成(100%)、中立(50%)、反対(0%)の3つから投票が可能です。<br>
+この時、提案者は自身で提案した案件に投票を行えません(投票開始時に管理人が提案者賛成票を1票入れます)。<br><br>
+
+<span class="under2">・dy0-4について</span><br>
+昇格及び降格提案は提案者を含めて2票以上の賛成票を必要とし、65%以上で可決となります。<br>
+※削除提案は、提案者を含めて最低3人以上の参加者と2票以上の賛成票、65%以上を必要とします。<br><br>
+
+<span class="under2">・dy5-7について</span><br>
+昇格及び降格提案は提案者を含めて1票以上の賛成票を必要とし(提案者のみでも有効)、65%以上で可決となります。<br>
+※削除提案は、提案者を含めて最低2人以上の参加者と2票以上の賛成票、65%以上を必要とします。<br><br>
+
+<span class="under2">・隔離票について</span><br>
+隔離提案は、提案者を含めて3人以上の投票参加、65%以上で可決となります。<br>
+管理人的にはdy？の曲数をあまり増やしたくないので、｢難易度バランスが全体的に取れているけど難易度がつけにくい｣差分以外は削除提案でお願いします。<br><br>
+
+<h3>投票フォームについて</h3>
+投票フォームは下記最低5つの項目に分かれてます。<br>
+それぞれの項目に従った回答をお願いします。<br><br>
+
+<span class="under">・PLAYER ID</span><br>
+LR2IR ID、MinIR ID、MochaIR IDのいずれかを記載してください。<br>
+※IDのみ記載してください。beatorajaプレイヤーにおいて、上記どちらのIRにも登録していない場合は[ID無し]と記載してください。<br>
+また、各IRにおけるIDの記載場所は下記の通りです。<br>
+LR2IR : マイページのLR2IDを参照<br>
+MinIR : サイトにログイン後、User PageのUSER IDを参照<br>
+MochaIR : サイトにログイン後、画面左上のUserネームからマイページを開き、URLの末尾id=以下を参照<br><br>
+
+<span class="under">・IDに対応するIR</span><br>
+上記で記載したIDがLR2IR、MinIR、MochaIRどれに対応するものなのか選択してください。
+※IDを[記載無し]とした場合は、[該当無し]を選択してください。
+
+<span class="under">・PLAYER NAME</span><br>
+Stella難易度表様、Twitter、IRでの名前等自由に記載ください。<br><br>
+
+<span class="under">・現在搭載中の難易度</span><br>
+変更提案を行った差分が現在搭載されている難易度を選択してください。<br><br>
+
+<span class="under">・曲名A、○○提案について</span><br>
+賛成、中立、反対の3つから1つお選びください。<br>
+※○○には昇格、降格、削除、隔離のいずれかの言葉が入ります。<br><br>
+
+<span class="under">・曲名B、○○提案について</span><br>
+…(略) <br><br>
+
+以降同様にして、提案があった数だけ項目数が追加されます。<br>
+※投票フォームはあらゆる提案を含みます、それぞれ任意回答としますので必要な項目のみ回答してください。<br><br>
+
+<h3>投票期間について(重要)</h3>
+提案はいつでも可能ですが、投票用フォームで管理する都合上集計と投票の期間を定めます。<br><br>
+
+<u>変更提案の意見を出揃える→投票期間</u><br>
+という流れで行います。<br><br>
+
+それぞれの日程は下記の通りです。<br>
+<span style="background-color:#FFFF00">
+変更提案 : いつでも可能<br>
+提案集計日 : 毎月第2週の金曜日<br>
+(集計期間 : 前回の提案集計日から今回の提案集計日前日まで) <br>
+投票開始日 : 提案集計日の翌日(毎月第2週の土曜日) <br>
+(投票可能期間 : 13日間)
+</span><br><br>
+
+提案集計日までに出揃った提案をまとめ、管理人が投票用フォームを作成します。<br>
+投票開始期間になりましたら、投票用フォームへのリンクを掲載いたしますのでそちらから投票への参加をお願いします。<br><br>
+
+例、今日が2022年5月13日(金)の場合<br>
+4/8(金)〜5/12(木)までの期間で提案された提案について、管理人が投票用フォームを作成します。<br>
+翌日5/14(土)に投票用フォームが公開され、公開日を含めて13日間の投票期間が開始されます。<br>
+13日後の5/26(木)の21:00に投票が締め切られ、集計結果が第4週の金曜日である5/27(金)に発表されます。<br><br>
+
+<h3>制限、その他</h3>
+<u>提案は、集計日間で1人あたり5回までとさせていただきます。</u><br>
+※やむを得ず、管理人はこの制限回数を越えて提案を行う場合があります。<br>
+誹謗中傷等、その他無関係な書き込みなどが発見された場合は、適切な対応を取らせていただく場合があります。<br><br><br><br><br>
+
+
+
+<h2>②新規搭載リクエストについて</h2>
+<h3>概要</h3>
+どなたでもDystopia難易度表への差分搭載リクエストを行うことができます。<br><br>
+
+<h3>導入</h3>
+<u>LR2で正常に動作しないものに関してはリクエストを受け付けません。</u><br><br>
+
+自作譜面の自薦を可とします。<br>
+1人あたり制限無く何回でも回答可能です。<br>
+回答に対してペナルティ等はありませんが、誹謗中傷等が確認された場合は適切な対応を取らせていただくことがあります。<br><br>
+
+本難易度表への提案要件を満たすと思われるものについて回答ください。<br>
+非搭載要件を全て満たさないものが、提案要件を満たすものとします。<br>
+非搭載要件は次の通りです。<br><br>
+
+<h3><span style="background-color:#FFFF00">非搭載要件</span></h3>
+・既にStella正式難易度表様に搭載されているもの(回答時点で搭載されていないものは問題ないです)。<br>
+・極端な皿やLN、とても長い棒のような縦連や壁、ソフランやギミックなどの個人差もしくは対策、覚え要素等が多く、EASY CLEARまたはHARD CLEARに大きく影響する。<br>
+・繰り返し同じ配置が極端に多い、または非常に長い。<br>
+・ダミーノート(地雷オブジェ)を使用している。
+・暇な時間が長いか、道中と殺し地帯の難易度差が極端に離れている。<br>
+・極端に低いTOTAL値または高いTOTAL値である。<br>
+・演奏時間が極端に長い(3分半〜4分以上)。<br>
+・演奏時間が30秒以下(回答は可能としますが、搭載は検討します)。<br>
+・地力譜面と言い難い(難易度非適正プレイヤーが数段階難易度を飛ばしてEASY CLEARできてしまう等)。<br>
+・版権曲や著作物、他人を不快にさせるもしくは中傷したり、犯罪を助長するようなもの等。<br>
+・楽曲作成者または差分作成者が難易度表への搭載を拒絶している。<br>
+・本体または差分のURLが壊れており、現在ではDL不可能なもの(補完して回答するのは可能とします)。<br><br>
+
+<h3>搭載について</h3>
+リクエストが採用されると正式難易度表への搭載となり、不採用となった場合はSub難易度表に搭載されます。
+搭載日は通常の更新と同じになりますが、管理人の精査速度次第では遅くなる場合もあります。<br>
+非搭載要件に1つでも当てはまると思われるものはSub難易度表にも不採用となります。<br>
+必ずしも採用されるとは限りませんこと、ご容赦くださいませ。<br>
+採用・不採用時の回答者へのフィードバックはありません。<br><br>
+
+<h3>回答方法</h3>
+回答欄は下記8つの項目に分かれてます。<br>
+1回答につき1曲とし、それぞれの項目に従った回答をお願いします。<br><br>
+
+<span class="under">・PLAYER ID</span><br>
+LR2IR ID、MinIR ID、MochaIR IDのいずれかを記載してください。<br>
+※IDのみ記載してください。beatorajaプレイヤーにおいて、上記どちらのIRにも登録していない場合は[ID無し]と記載してください。<br>
+また、各IRにおけるIDの記載場所は下記の通りです。<br>
+LR2IR : マイページのLR2IDを参照<br>
+MinIR : サイトにログイン後、User PageのUSER IDを参照<br>
+MochaIR : サイトにログイン後、画面左上のUserネームからマイページを開き、URLの末尾id=以下を参照<br><br>
+
+<span class="under">・IDに対応するIR</span><br>
+上記で記載したIDがLR2IR、MinIR、MochaIRどれに対応するものなのか選択してください。
+※IDを[記載無し]とした場合は、[該当無し]を選択してください。
+
+<span class="under">・PLAYER NAME</span><br>
+Stella難易度表様、Twitter、IRでの名前等自由に記載ください。<br><br>
+
+<span class="under">・曲名</span><br>
+平衡世界 [miracle]<br>
+上記のように差分名まで記載ください。<br>
+IR等からのコピー＆ペーストを推奨します。<br><br>
+
+<span class="under2">・bmsmd5</span><br>
+md5とは各譜面が固有に持つハッシュ値のことで、同曲同差分名のものと区別するために重要な項目となります。<br>
+<a href="http://www.ribbit.xyz/bms/score/" style="display:inline">BMS Score Viewer様</a>にて該当の譜面ファイルをドラッグ＆ドロップもしくは検索にて開き、URLの｢www.ribbit.xyz〜(中略)〜md5=xxx…｣より"xxx…"以降全てをコピーして回答欄へペーストをお願いします。<br><br>
+
+<span class="under">・本体URL</span><br>
+イベントURLを可能とします。<br>
+URLが壊れていないことを確認してください。<br>
+正規URLが壊れている場合は補完して回答いただいても構いません。<br><br>
+
+<span class="under">・差分URL</span><br>
+本体の中に初めから同梱されている譜面の場合は｢同梱譜面｣とご記載ください(カギカッコは不要)。<br><br>
+
+<span class="under">・推定難易度</span><br>
+dy0-7から提案差分の推定される難易度をお選びください。<br>
+dy？への回答は受け付けておりません。<br><br>
+</div>
