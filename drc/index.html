@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3H9QLCBCD4&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-220201324-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220201324-1');
+</script>
+
+<title>Dystopia難易度表</title>
+<meta name="google-site-verification" content="F6Q7xJyM044_ATTpnBjnKWwwGQ7H1h3WNa1O5AqXDwE">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Script-Type" content="text/javascript"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="style.js"></script> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="bmstable" content="./dystopia_header.json"> <!--　読み込む難易度表のヘッダファイルをここに指定　-->
+<link href="style.css" rel="stylesheet" type="text/css" media="screen,print">
+<!-- <script src="style.js"></script>// --> 
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+
+</head> 
+
+
+<body bgcolor="#FFFFFE" class="">
+<header class="header">
+  <section class="header__inner">
+    <h1>段位認定 (DRC)</h1>
+    <div class="overlay" id="js-overlay"></div>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__lineTop"></span>
+      <span class="hamburger__lineCenter"></span>
+      <span class="hamburger__lineBottom"></span>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="style.js"></script>
+    </div>
+    <div class="sideMenu">
+    <nav>
+        <ul>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/index.html">　HOME　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/overview.html">　概要　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/remind.html">　Remind　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/rule.html">　ルール　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/notice.html">　お知らせ　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/drc/index.html">　段位認定 (DRC)　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/changelog/2023.html">　更新履歴　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/vote.html">　難易度変更提案＆投票　</a>
+          </li>
+          <li>
+            <a href="https://monibms.github.io/Dystopia/request.html">　新規搭載リクエスト　</a>
+          </li>
+            <div style="margin-bottom:100px;">
+          <li>
+            <a href="https://monibms.github.io/Dystopia/other.html">　その他　</a>
+          </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
+  
+<br><br>
+
+<div id="sample">
+
+<center>
+<div class="accordion">
+  <div class="accordion-container">
+    <div class="accordion-item">
+      <div class="accordion-title js-accordion-title">
+        合格者数履歴(log)
+      </div>
+      <!--/.accordion-title-->
+      <div class="accordion-content">
+        <p>
+<a href="2023.html" style="display:inline">2023</a>
+</p>
+      </div>
+      <!--/.accordion-content-->
+    </div>
+    <!-- /.accordion-item -->
+  </div>
+  <!-- /.accordion-container -->
+</div>
+<!-- .accordion -->
+</center>
+
+<h2>DRCについて</h2>
+<h3>概要</h3>
+DRC (<span class="under">Dystopia Rank Certification : 段位認定</span>)<br>
+プレイヤーのおおよその実力を測るためのコンテンツです。<br>
+ページ下部にDRC Set Listを記載してあります(下に行くほど難易度が高くなります)。<br><br>
+
+<h3>コンセプト</h3>
+さまざまな傾向の地力が一定程度あれば受かるような、上から殴るようなタイプの段位を目指しました。<br>
+各傾向の地力を万遍なく持ったプレイヤーが、EASYでそこそこ遊べる難易度-1のコースが適正目安を想定しております。<br>
+明確な回復枠や極端な局所難を含む譜面はほとんど採用していないつもりです。<br>
+ゲージ推移は横ばいを想定して作成したので、どの傾向にも限らず地力や体力が不足していると難しく感じる可能性が高いです。<br>
+※上記のようなコンセプトがありますので、<u>他の難易度表の段位との難易度比較は難しいと思います</u>。<br><br>
+
+<h3>合格者数履歴</h3>
+DRCを受けるプレイヤーへの見返りが何も無いのは寂しかったので、軽めのモチベ向上も兼ねて毎月合格者の総数をログとして残していきます。<br>
+更新は月に1回で、毎月最初の楽曲更新日(第2週の金曜日)に<span class="under2">LR2IR及びMochaIR</span>から合格者数をカウントします。<br>
+更新の際は、合格者数をカウントした時刻(JST)も合わせて表記します。<br>
+人類学における正確なカウントを行いたいですが、<span class="under2">不正等を見抜くシステムは無いのでデータ改ざんやオートプレイ用プログラムの使用、連射パッド使用等の行為は避けていただけると幸いです</span>。<br><br>
+
+<h3>その他</h3>
+各コース間の難易度差は、完全な等間隔とは限りませんのであらかじめご了承ください。<br><br>
+
+<h3>おわりに</h3>
+極小人数で全ての段位コースを作成したので不満に思う部分もあるとは思いますが、至らない点が多いことご容赦いただければ幸いです。<br>
+この段位コース(DRC)が、たくさんのプレイヤーのモチベーションや地力の向上に繋がることを願っております。<br><br>
+
+<h2>Course File</h2>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>Course</th> <th>File</th>
+  </tr>
+  <tr>
+    <td align="center"><i> Dystopia Rank Certification 1st </i></td> <td align="center"><a href="" style="display:inline">DL</a></td>
+  </tr>
+</div>
+</table>
+
+<br>
+
+<h2>DRC Set List</h2>
+<div class="accordion">
+  <div class="accordion-container">
+    <div class="accordion-item">
+      <div class="accordion-title js-accordion-title">
+        <center>Dystopia Rank Certification 1st</center>
+      </div>
+      <!--/.accordion-title-->
+      <div class="accordion-content">
+        <p>
+
+<h3>dy0　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">Lotus Life [LT's Life]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">Reason [Full down]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">CHMR [Dystopia]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">on Principle [INSANE]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy1　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+   <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">* Crow Solace * [97%]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center"> Verwirrung [\]|[\]||[/]|[/]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">ラストワード [LAIKA]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">A c i - L - [LAW]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy2　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">Schwerkraft [Abyss]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">Luv 5 Dancer [Last Dancer]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center"> Intercosmic travel [comet]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">JUMMER [Nighthawk]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy3　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">Let me wish shooting star [S=ephemeral]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">Blue Dragoon [FULL]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">翡翠 -碧玉-</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">wOrthlEss [END]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy4　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">electric butterfly [thunderstorm]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">星屑アポトーシス [END]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">gazer [A/DM]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">B e l i - R [CHAOS]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy5　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">白の魔法の光 [Purge]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">白き星姫-Принцесса белая звезда- [Антиутопия]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">EVERLASTING HAPPiNESS↑ [END]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">time eclipse [parallel]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy6　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">Air -Ragnarok-</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">First Creation [Galaxy]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">あにまら [delaylove∞]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">Pixel Princess [Royal Dignity]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy7 α　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">Master Spark!!! [Solar]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">CRUSH THE PARTY [BREAK]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">Qualia [Arcana]</td>
+  </tr>
+<tr>
+    <td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">FREEDOM DiVE [LEGEND]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy7 β　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">天空の城ヴェリエル [Ultima Thule]</td>
+  </tr>
+<tr>
+<td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">Way of Life! [Reason]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">aliceblue (Radio Edit) [enigma]</td>
+  </tr>
+<tr>
+<td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">kkotipari Hangaduk [KKOTIPARI MASTER]</td>
+</tr>
+</div>
+</table>
+
+<br>
+
+<h3>dy7 γ　[<a href="" style="display:inline">LR2IR</a>] / [<a href="" style="display:inline">MochaIR</a>] </h3>
+<table width="100%" bgcolor="#F8FBFF" align="center" border=1>
+<div style="text-align:center">
+  <tr>
+    <th>No.</th> <th>Title</th>
+  </tr>
+  <tr>
+    <td width="10%" align="center"><i>1st</i></td> <td width="90%" align="center">リクロスフェイト [Re:X]</td>
+  </tr>
+<tr>
+<td width="10%" align="center"><i>2nd</i></td> <td width="90%" align="center">Fluctuate [Re/verse]</td>
+</tr>
+<tr>
+    <td width="10%" align="center"><i>3rd</i></td> <td width="90%" align="center">Chinese Tea [Fragrance]</td>
+  </tr>
+<tr>
+<td width="10%" align="center"><i>4th</i></td> <td width="90%" align="center">NS22 [Epilogue]</td>
+</tr>
+</div>
+</table>
+
+</p>
+      </div>
+      <!--/.accordion-content-->
+    </div>
+    <!-- /.accordion-item -->
+  </div>
+  <!-- /.accordion-container -->
+</div>
+<!-- .accordion -->
+
+<br><br>
+
+</div>
