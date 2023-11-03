@@ -6,7 +6,7 @@
 # 基本設定
 #
 
-$HTTP_PATH = 'test/'  # 設置URL 最後に/を付けること
+$HTTP_PATH = 'https://monibms.github.io/Dystopia/test.html/'  # 設置URL 最後に/を付けること
 $TEMPLATE_PATH = 'templates/' # テンプレートフォルダ
 $UPLOAD_PATH = 'files/' # ファイルをアップロードをする対象のフォルダ
 
