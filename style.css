@@ -89,7 +89,19 @@ a {
   #gnav-input:checked ~ #gnav-content {
     top: 0;
   }
-.humb-menu label {
+  #gnav-content {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+    transition: 0.3s;
+    width: 100%;
+  }
+  .humb-menu__title {
+    padding: 1.5rem;
+  }
+  .humb-menu label {
+    display: flex;
     justify-content: space-between;
     padding: 1.5rem;
     cursor: pointer;
@@ -108,6 +120,7 @@ a {
   .humb-menu .cssacc:checked + .accshow {
     height: auto;
   }
+} 
 
 
 
