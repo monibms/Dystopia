@@ -75,7 +75,7 @@ a {
   height: 100%;
   overflow-y: scroll;
   padding-top: 56px;
-  position: fixed;
+  position: absolute;
   right: -200px;
   transition: all 0.3s;
   top: 0;
