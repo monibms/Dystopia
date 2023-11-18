@@ -69,6 +69,50 @@ a {
 .header a {
   color: #000;
 }
+
+
+
+
+
+#gnav-btn {
+    color: gray;
+    padding: 10px;
+    font-size: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    background-color: white;
+    border: solid 1px #d1caca;
+    border-radius: 3px;
+  }
+  #gnav-input:checked ~ #gnav-content {
+    top: 0;
+  }
+.humb-menu label {
+    justify-content: space-between;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-top: 0.5px solid #c7c5c5;
+  }
+  .humb-menu input {
+    display: none;
+  }
+  .humb-menu .accshow {
+    height: 0;
+    overflow: hidden;
+  }
+  .humb-menu .accshow p {
+    padding: 1.5rem;
+  }
+  .humb-menu .cssacc:checked + .accshow {
+    height: auto;
+  }
+
+
+
+
+
 .sideMenu {
   background-color: #fff;
   height: 100%;
@@ -160,46 +204,6 @@ section {
 .service {
   background-color: #ffbcbc;
 }
-
-
-
-#gnav-btn {
-    color: gray;
-    padding: 10px;
-    font-size: 30px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-    background-color: white;
-    border: solid 1px #d1caca;
-    border-radius: 3px;
-  }
-  #gnav-input:checked ~ #gnav-content {
-    top: 0;
-  }
-.humb-menu label {
-    justify-content: space-between;
-    padding: 1.5rem;
-    cursor: pointer;
-    border-top: 0.5px solid #c7c5c5;
-  }
-  .humb-menu input {
-    display: none;
-  }
-  .humb-menu .accshow {
-    height: 0;
-    overflow: hidden;
-  }
-  .humb-menu .accshow p {
-    padding: 1.5rem;
-  }
-  .humb-menu .cssacc:checked + .accshow {
-    height: auto;
-  }
-
-
-
 
 
 table {
