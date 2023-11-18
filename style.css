@@ -162,6 +162,29 @@ section {
 }
 
 
+.humb-menu label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-top: 0.5px solid #c7c5c5;
+  }
+  .humb-menu input {
+    display: none;
+  }
+  .humb-menu .accshow {
+    height: 0;
+    overflow: hidden;
+  }
+  .humb-menu .accshow p {
+    padding: 1.5rem;
+  }
+  .humb-menu .cssacc:checked + .accshow {
+    height: auto;
+  }
+
+
+
 table {
   border-collapse: collapse;
   color: #333; /* 全体の文字色 */
