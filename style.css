@@ -162,6 +162,22 @@ section {
 }
 
 
+
+#gnav-btn {
+    color: gray;
+    padding: 10px;
+    font-size: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    background-color: white;
+    border: solid 1px #d1caca;
+    border-radius: 3px;
+  }
+  #gnav-input:checked ~ #gnav-content {
+    top: 0;
+  }
 .humb-menu label {
     display: flex;
     justify-content: space-between;
@@ -182,6 +198,8 @@ section {
   .humb-menu .cssacc:checked + .accshow {
     height: auto;
   }
+
+
 
 
 
