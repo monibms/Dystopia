@@ -102,12 +102,15 @@ a {
 }
 .hamburger__lineTop {
   top: 20px;
+  position: fixed;
 }
 .hamburger__lineCenter {
   top: 29px;
+  position: fixed;
 }
 .hamburger__lineBottom {
   top: 38px;
+  position: fixed;
 }
 .overlay {
   background-color: #000;
@@ -130,14 +133,17 @@ a {
 .nav-open .hamburger__lineTop {
   top: 26px;
   transform: rotate(45deg);
+  position: fixed;
 }
 .nav-open .hamburger__lineCenter {
   left: 50%;
   width: 0;
+  position: fixed;
 }
 .nav-open .hamburger__lineBottom {
   top: 26px;
   transform: rotate(-45deg);
+  position: fixed;
 }
 .nav-open .overlay {
   opacity: 0.8;
