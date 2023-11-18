@@ -75,7 +75,7 @@ a {
   height: 100%;
   overflow-y: scroll;
   padding-top: 56px;
-  position: relative;
+  position: fixed;
   right: -200px;
   transition: all 0.3s;
   top: 0;
@@ -86,7 +86,7 @@ a {
 .hamburger {
   cursor: pointer;
   height: 56px;
-  position: relative;
+  position: absolute;
   right: 0;
   top: 0;
   width: 56px;
@@ -96,7 +96,7 @@ a {
   background-color: #111;
   height: 1px;
   left: 11px;
-  position: relative;
+  position: absolute;
   transition: all 0.3s;
   width: 30px;
 }
@@ -115,7 +115,7 @@ a {
   height: 100vh;
   left: 0;
   opacity: 0;
-  position: relative;
+  position: fixed;
   top: 0;
   transition: all 0.3s;
   visibility: hidden;
