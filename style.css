@@ -303,6 +303,28 @@ html.is-fixed body {
   transform: rotate(-45deg);
 }
 
+/* 矢印 */
+.accordion-title2 {
+  position: relative;
+}
+.accordion-title2::after {
+  border-right: solid 2px #fff;
+  border-top: solid 2px #fff;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 25px;
+  top: 20%;
+  transform: rotate(135deg);
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+  width: 8px;
+}
+.accordion-title2.open::after {
+  top: 38%;
+  transform: rotate(-45deg);
+}
+
 /* ====================================
   ここからPC幅
 ==================================== */
