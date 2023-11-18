@@ -38,6 +38,7 @@ $(function () {
   });
 });
 
-$(document).on( 'touchstart click','#menu', function(e){
+$(document () {
+  .on( 'touchstart click','#menu', function(e){
 	e.stopPropagation();
 });
