@@ -37,3 +37,7 @@ $(function () {
     $(this).toggleClass("open", 300);
   });
 });
+
+$(document).on( 'touchstart click','#menu', function(e){
+	e.stopPropagation();
+});
