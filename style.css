@@ -255,6 +255,12 @@ html.is-fixed body {
   font-size: 13px;
   line-height: 1.5;
 }
+.accordion-content2 {
+  display: none;
+}
+.accordion-content2 p {
+  font-size: 16px;
+}
 /* タイトルの背景色 */
 .accordion-item:nth-of-type(1) .accordion-title {
   border: 2px solid #d0ebfd;
