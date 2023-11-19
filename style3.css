@@ -236,7 +236,7 @@ html.is-fixed body {
 
 /* ずれるコンテンツ側に指定するCSS */
 .under-content {
-	position: absolute;
+	position: relative;
 }
 
 .accordion {
