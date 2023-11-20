@@ -126,6 +126,7 @@ a {
 .nav-open .sideMenu {
   background-color: #fff;
   right: 0;
+z-index: 200;
 }
 .nav-open .hamburger__lineTop {
   top: 26px;
