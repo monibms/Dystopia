@@ -184,6 +184,7 @@ th {
 
 #sample2 {
 	  z-index: -5;
+	width: 100%;
 -webkit-text-size-adjust: 100%;
 }
 
