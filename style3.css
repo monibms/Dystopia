@@ -183,7 +183,7 @@ th {
 }
 
 #sample2 {
-	position: fixed;
+	position: sticky;
 -webkit-text-size-adjust: 100%;
 }
 
