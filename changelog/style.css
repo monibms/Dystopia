@@ -35,10 +35,12 @@ h3 {
   background: transparent;/*背景透明に*/
   border-left: solid 5px #7db4e6;/*左線*/
 }
+
 a {
   display: block;
   text-decoration: none;
 }
+
 .fixed {
 /*   height: 100%; */
   position: fixed;
@@ -67,6 +69,7 @@ a {
 .header a {
   color: #000;
 }
+
 .sideMenu {
   background-color: #fff;
   height: 100%;
@@ -235,7 +238,6 @@ html.is-fixed body {
 .under-content {
 	position: relative;
 }
-        
 
 .accordion {
   position: relative;
@@ -251,6 +253,13 @@ html.is-fixed body {
 }
 .accordion-content p {
   font-size: 13px;
+  line-height: 1.5;
+}
+.accordion-content2 {
+  display: none;
+}
+.accordion-content2 p {
+  font-size: 16px;
   line-height: 1.5;
 }
 /* タイトルの背景色 */
@@ -297,6 +306,28 @@ html.is-fixed body {
   width: 8px;
 }
 .accordion-title.open::after {
+  top: 38%;
+  transform: rotate(-45deg);
+}
+
+/* 矢印 */
+.accordion-title2 {
+  position: relative;
+}
+.accordion-title2::after {
+  border-right: solid 2px #000;
+  border-top: solid 2px #000;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 25px;
+  top: 20%;
+  transform: rotate(135deg);
+  transition: transform .3s ease-in-out, top .3s ease-in-out;
+  width: 8px;
+}
+.accordion-title2.open::after {
   top: 38%;
   transform: rotate(-45deg);
 }
