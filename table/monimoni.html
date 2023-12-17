@@ -207,6 +207,9 @@ function makeBMSTable(info, mark, order) {
         }
         $("<td width='20%'>" + astr + "</td>").appendTo(str);
 
+      // BPM
+        $("<td width='2%' align='center'>" + info[i].BPM + "</td>").appendTo(str);
+	    
       // 差分
              if(info[i].url_diff != "" && info[i].url_diff != null) {
      if(info[i].name_diff != "" && info[i].name_diff != null) {
