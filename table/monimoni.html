@@ -27,8 +27,8 @@
 <body>
 
 <style>
-#fixed {
-position: fixed; /* 要素の位置を固定する */
+#sticky {
+position: sticky; /* 要素の位置を固定する */
 top: 0
 z-index: 1;
 }
@@ -134,7 +134,7 @@ function makeBMSTable(info, mark, order) {
 	
     // 表のクリア
     obj.html("");
-<div id="fixed">
+<div id="sticky">
     $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>譜面</td><td align='center'>Title</td><td align='center'>Artist</td><td align='center'>BPM</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>Total</td><td align='center'>Comment</td></tr>").appendTo(obj);
 	</div>
 	var obj_sep = null;
