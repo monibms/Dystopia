@@ -142,7 +142,7 @@ function makeBMSTable(info, mark, order) {
             // 前の区切りに譜面数、平均密度を追加
           	if (obj_sep != null) {
 
-                obj_sep.html("<td colspan='8' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
+                obj_sep.html("<td colspan='9' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
             }
             obj_sep = $("<tr class='tr_separate' id='" + mark + info[i].level + "'></tr>");
             obj_sep.appendTo(obj);
