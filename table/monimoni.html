@@ -125,10 +125,11 @@ function makeBMSTable(info, mark, order) {
 	}
 	
     // 表のクリア
-	<div class="table-sticky">
+	<div class="sticky">
     obj.html("");
     $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>譜面</td><td align='center'>Title</td><td align='center'>Artist</td><td align='center'>BPM</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>Total</td><td align='center'>Comment</td></tr>").appendTo(obj);
-    var obj_sep = null;
+  </div>
+var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         // 難度ごとの区切り
         if (x != info[i].level) {
@@ -142,7 +143,6 @@ function makeBMSTable(info, mark, order) {
             count = 0;
             x = info[i].level;
         }
-		</div>
         // 本文
         var str = $("<tr class='tr_normal'></tr>");
 
